@@ -1,0 +1,318 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap'); 
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: poppins, sans-serif;
+}
+
+.topbar {
+	position: fixed;
+	background: #fff;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.08);
+	width: 100%;
+	height: 60px;
+
+	display: grid;
+	grid-template-columns: 250px 1080px 50px 60px auto;
+	padding: 0 0 0 20px;
+
+	align-items: center;
+	z-index: 1;
+
+}
+
+
+.search {
+	position: relative;
+	width: 50%;
+	justify-self: center;
+}
+
+.search input {
+	width: 100%;
+	height: 40px;
+	padding: 0 40px;
+	font-size: 16px;
+	outline: none;
+	border: none;
+	border-radius: 10px;
+	background: #f5f5f5;
+}
+
+.search i {
+	position: absolute;
+	left: 10px;
+	top: 15px;
+	cursor: pointer;
+}
+
+.user {
+	position: relative;
+	width: 50px;
+	height: 50px;
+}
+
+.user img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+	border-radius: 50%;
+}
+
+/* side bar */
+.sidebar {
+	position: fixed;
+
+	width: 250px;
+	height: calc(100% - 60px);
+	margin-top: 60px;
+	background: #fff;
+	overflow-x: hidden;
+}
+
+.logo img {
+
+	height: 40px;
+	width: 100px;
+	margin: 2px;
+
+}
+
+.sidebar ul {
+	margin-top: 20px;
+}
+
+.sidebar ul li {
+	width: 100%;
+	list-style: none;
+	font-size: 15px;
+
+}
+
+.sidebar ul li a {
+	width: 100%;
+	text-decoration: none;
+	color: #8d8da7;
+	height: 65px;
+	display: flex;
+	align-items: center;
+}
+
+.sidebar ul li a i {
+	min-width: 60px;
+	font-size: 26px;
+	text-align: center;
+}
+
+.sidebar ul li:hover {
+	transform: scale(1.05);
+
+}
+
+.sidebar ul li .active {
+
+	color: #5957bc;
+
+
+}
+
+/*main part*/
+
+.main {
+	position: absolute;
+	top: 60px;
+	width: calc(100% - 250px);
+	left: 250px;
+	min-height: calc(100% - 60px);
+	background-color: #f5f2f1;
+}
+
+
+.gigform {
+	width: 700px;
+	padding: 30px;
+	margin: 40px auto;
+	background: #FFF;
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.13);
+	-moz-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.13);
+	-webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.13);
+}
+
+.gigform .inner-wrap {
+	padding: 30px;
+	background: #f5f2f1;
+	border-radius: 6px;
+	margin-bottom: 15px;
+}
+
+.gigform h1 {
+	background: #4c4b84;
+	padding: 20px 30px 15px 30px;
+	margin: -30px -30px 30px -30px;
+	border-radius: 10px 10px 0 0;
+	-webkit-border-radius: 10px 10px 0 0;
+	-moz-border-radius: 10px 10px 0 0;
+	color: #fff;
+	text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.12);
+	font-size: 30px;
+	font-family: 'Poppins';
+	font-style: normal;
+	-moz-box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.17);
+	-webkit-box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.17);
+	box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.17);
+	border: 1px solid #257C9E;
+}
+
+.gigform h1>span {
+	display: block;
+	margin-top: 2px;
+	font-size: 13px;
+	font-family: 'Poppins';
+	font-style: normal;
+}
+
+.gigform label {
+	display: block;
+	font-size: 13px;
+	font-family: 'Poppins';
+	font-style: normal;
+	color: rgb(102, 101, 101);
+	margin-bottom: 15px;
+}
+
+.gigform input[type="text"],
+.gigform input[type="date"],
+.gigform input[type="email"],
+.gigform input[type="number"],
+.gigform input[type="search"],
+.gigform input[type="time"],
+.gigform input[type="url"],
+.gigform textarea,
+.gigform select {
+	display: block;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	width: 100%;
+	padding: 8px;
+	border-radius: 6px;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border: 2px solid #fff;
+	box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.33);
+	-moz-box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.33);
+	-webkit-box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.33);
+}
+
+.gigform .section {
+	font-family: 'Poppins';
+	font-style: normal;
+	color: #4c4b84;
+	margin-bottom: 5px;
+}
+
+.gigform .section span {
+	background: #4c4b84;
+	padding: 5px 10px 5px 10px;
+	position: absolute;
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border: 4px solid #fff;
+	font-size: 14px;
+	margin-left: -45px;
+	color: #fff;
+	margin-top: -3px;
+}
+
+.gigform input[type="button"],
+.gigform input[type="submit"] {
+	background: #4c4b84;
+	padding: 8px 20px 8px 20px;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	color: #fff;
+	text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.12);
+
+	font-family: 'Poppins';
+	font-style: normal;
+	-moz-box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.17);
+	-webkit-box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.17);
+	box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.17);
+	border: 1px solid #4c4b84;
+	font-size: 15px;
+}
+
+.gigform input[type="button"]:hover,
+.gigform input[type="submit"]:hover {
+	background: #8d8da7;
+	-moz-box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.28);
+	-webkit-box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.28);
+	box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.28);
+}
+
+.gigform .privacy-policy {
+	float: right;
+	width: 250px;
+	font-size: 12px;
+	color: #4D4D4D;
+	margin-top: 10px;
+	text-align: right;
+}
+
+
+
+
+input::file-selector-button {
+	background-image: linear-gradient(to right,
+			#8d8da7,
+			#4c4b84);
+	font-family: 'Poppins';
+	font-style: normal;
+	max-height: 50px;
+	background-position-x: 0%;
+	background-size: 200%;
+	border: 0;
+	border-radius: 5px;
+	color: #fff;
+	padding: 1rem 1.25rem;
+	text-shadow: 0 1px 1px #333;
+	transition: all 0.25s;
+	margin-left: 15%;
+}
+
+input::file-selector-button:hover {
+	color: #4c4b84;
+
+}
+
+.moreopt button {
+	background: #4c4b84;
+	padding: 8px 20px 8px 20px;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	color: #fff;
+	text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.12);
+
+	font-family: 'Poppins';
+	font-style: normal;
+	-moz-box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.17);
+	-webkit-box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.17);
+	box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.17);
+	border: 1px solid #4c4b84;
+	font-size: 15px;
+}
+
+.moreopt button:hover {
+	background: #8d8da7;
+}
