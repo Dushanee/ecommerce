@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select user type</title>
+    <script type="text/javascript" src="../js/front.js" defer></script>
+    <script type="text/javascript" src="../js/selectUserType.js" defer></script>
+    <link rel="stylesheet" href="../css/front.css">
+    <link rel="stylesheet" href="../css/selectUserType.css">
+</head>
+<body>
+   
+  <div id="navBar">
+    <div class="navigator_background"></div>
+    <div class="wrapper">
+
+       <a class="aboutus p" id="a" href="../FrontUi/front.html" >About Us</a>
+       <a class="blog p" id="a" href="../FrontUi/second.html" >Blog</a>
+       <a class="customerSpt p" id="a" href="../FrontUi/customersupport1/public/index.php">Customer Support</a>
+       <a class="login p" id="a" href="../FrontUi/selectLogintype.html">Log In</a>
+       <a class="signup p" id="a" href="../FrontUi/selectUserType.html">Sign Up</a>
+    </div>
+    
+    <div>
+        <img class="eventslab" src="../FrontUi/images1/logo.png" >
+    </div>
+  </div>
+
+  <div class="BtnWrapper">
+    <button id="customer" name="customer"  onclick="sendData('customer')">Sign up as a <br> customer    <div id="customer_ball"></div> </button>
+    <button id="serviceProvider" name="serviceProvider" onclick="sendData('serviceProvider')">Signup as a<br> Service provider   <div id="serviceProvider_ball"></div> </button>
+  </div>
+
+  <img src="./images1/signup_usertype.jpg" id="user_signup">
+
+
+    <div class="footer" id="footer1">
+     
+        <img id="logo2" src = "../FrontUi/images1/logo.png" >
+         <span class="slogan">Make your dream</span><br>
+         <span class="slogan">event come true</span> 
+         
+         <p class="contactus">Contact us</p>
+  
+         <img id="footerPhone" src="./images1/footer_ringer_volume_32px.png">
+         <p id="phone">+94 33 234 1249</p>
+         
+         <img id="mail" src="./images1/footer_secured_letter_32px.png">
+         <p id="email">eventslab@gmail.com</p>
+  
+         <img id="location" src="./images1/footer_location_32px.png">
+         <p id="address">UCSC complec, Reid avenue, Colombo 7</p>
+         
+         <p class="socialMedia">Follow us on social media</p>
+          
+         <div class="socialMediaIcon">
+           <img id="icon" src="./images1/social media/icons8_facebook_32px.png">
+           <img id="icon" src="./images1/social media/icons8_Instagram_32px.png">
+           <img id="icon" src="./images1/social media/icons8_linkedin_circled_32px.png">
+         </div>
+
+         <script type="text/javascript" src="front.js"></script>
+  
+        <div class="rights_footer">
+          <p>Copyrights reserved</p>
+        </div>
+      </div>
+</body>
+</html>
