@@ -1,0 +1,89 @@
+@import url(https://fonts.googleapis.com/css?family=Dancing+Script);
+
+* {
+    margin: 0;
+}
+
+body {
+    background-color: #ffffff29;
+    font-family: 'poppins', sans-serif;
+    overflow: hidden;
+}
+
+
+
+/* Main */
+.main {
+    margin-top: 5%;
+    margin-left: 35%;
+    font-size: 28px;
+    padding: 0 10px;
+    width: 30%;
+}
+
+
+.main .card {
+    background-color: #fff;
+    border-radius: 18px;
+    box-shadow: 1px 1px 8px 0 grey;
+    height: auto;
+    margin-bottom: 20px;
+    padding: 20px 0px 20px 50px;
+}
+
+.card-body{
+    padding-top: 120px;
+}
+
+.main .card table {
+    border: none;
+    font-size: 16px;
+    height: 270px;
+    width: 80%;
+}
+
+
+
+
+  .card-profile-image {
+    position: relative;
+  }
+  
+  .card-profile-image img {
+    position: absolute;
+    left: 45%;
+    max-width: 180px;
+    transition: all .15s ease;
+    transform: translate(-50%, -30%);
+    border-radius:50%;
+  }
+  
+  .card-profile-image img:hover {
+    transform: translate(-50%, -33%);
+  }
+  
+  .card-profile-stats {
+    padding: 1rem 0;
+  }
+  
+  .card-profile-stats>div {
+    margin-right: 1rem;
+    padding: .875rem;
+    text-align: center;
+  }
+
+/* .edit {
+    position: absolute;
+    color: #e7e7e8;
+    right: 14%;
+}
+
+.social-media {
+    text-align: center;
+    width: 90%;
+}
+
+.social-media span {
+    margin: 0 10px;
+} */
+
