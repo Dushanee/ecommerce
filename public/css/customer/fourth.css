@@ -1,0 +1,223 @@
+#navBar{
+    position: fixed;
+    margin-top: -2px;
+    z-index: 1;
+}
+body{
+    overflow-x: hidden;
+    font-family: 'Poppins';
+}
+
+.loginForm{
+    width: 500px;
+    height: 420px;
+    background-color: #9b9b9e38;;
+    box-shadow: 0px 10px 20px 6px rgba(3, 3, 3, 0.2);
+    margin-top: 210px;
+    /* margin-left: 480px;  */
+    border-radius: 10px; 
+}
+.overlay+p{
+    /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+    font-family: 'Poppins';
+    font-size: 23px;
+    position: absolute;
+    font-weight: 700;
+    margin-left: 690px;
+    margin-top: -40px;
+}
+.userNamelbl{
+    position: absolute;
+    width: 300px;
+    margin-top: 42px;
+    margin-left: 48px;
+    font-size: 17px;
+    /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+    font-family: 'Poppins';
+    font-size: 18px;
+    color: lightslategray;
+}
+#userName{
+    width: 400px;
+    height: 30px;
+    border: none;
+    background-color: rgb(161 160 160 / 34%);
+    border-radius: 10px;
+    text-align: left;
+    color: rgb(50, 48, 48);
+    /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+    font-family: 'Poppins';
+    font-size: 15px;
+    margin-top: 70px;
+    margin-left: 40px;
+    text-indent: 10px;
+    text-align: center;
+    transition: 1s;
+}
+#userName:focus{
+    outline: none;
+    border-color: rgb(48, 47, 47);
+    box-shadow: 1px 2px 2px 3px rgba(3, 3, 3, 0.2);
+}
+.passwordlbl{
+    position: absolute;
+    width: 200px;
+    margin-top: 140px;
+    margin-left: -397px;
+    font-size: 17px;
+    /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+    font-family: 'Poppins';
+    font-size: 18px;
+    color: lightslategray;
+}
+#pwd{
+    width: 400px;
+    height: 25px;
+    border: none;
+    background-color: rgb(161 160 160 / 34%);
+    border-radius: 10px;
+    text-align: left;
+    color: rgb(50, 48, 48);
+    /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+    font-family: 'Poppins';
+    font-size: 15px;
+    margin-top: 64px;
+    margin-left: 38px;
+    text-indent: 10px;
+    text-align: center;
+    transition: 1s;
+}
+#pwd:focus{
+    outline: none;
+    border-color: rgb(48, 47, 47);
+    box-shadow: 1px 2px 2px 3px rgba(3, 3, 3, 0.2);
+}
+#eyebtn{
+    position: absolute;
+    width: 28px;
+    height: 26px;
+    background-image: url("../../customer/image/images1/eye_32px.png");
+    background-repeat: no-repeat;
+    background-size:25px;
+    background-position: 50% 50%;
+    border: none;
+    background-color: transparent;
+    margin-top: -26px;
+    margin-left: 400px;
+    cursor: pointer;
+}
+#eyebtn:hover{
+    background-color: rgb(187, 184, 184);
+    border-radius: 50px;
+}
+#submit{
+    position: absolute;
+    margin-top: 70px;
+    margin-left: 197px;
+    width: 100px;
+    height: 40px;
+    border-radius: 50px;
+    border: none;
+    background-color: #4c4b84;
+    color: white;
+    display: flex;
+    font-family: 'Poppins';
+    justify-content: center; 
+    font-size: 15px;
+}
+#submit:hover{
+    cursor: pointer;
+}
+.line1{
+    width: 100px;
+    height: -2px;
+    background-color: rgb(215, 209, 209);
+    margin-top: 150px;
+    margin-left: 75px;
+}
+.line1+p{
+    color: grey;
+    margin-top: -20px;
+    margin-left: -18px;
+}    
+.line2{
+    width: 100px;
+    height: -2px;
+    background-color: rgb(215, 209, 209);
+    margin-top: -25px;
+    margin-left: 305px;
+}
+.login_google{
+    width: 25px;
+    height: auto;
+    margin-top: 10px;
+    margin-left: 205px;
+    cursor: pointer;
+}
+.login_facebook{
+    width: 25px;
+    height: auto;
+    margin-left: 15px;
+    cursor: pointer;
+}
+.login_facebook+p{
+    color:rgb(115, 113, 113);
+    text-align: center;
+}
+p a{
+   color: rgb(11, 130, 170);
+}
+#create_B_account{
+    margin-left: -20px;
+}
+#errorMessage{
+    color: red;
+    margin-left: 140px;
+    margin-top: 40px;
+    position: absolute;
+}
+p{
+    color:rgb(115, 113, 113);
+    text-align: center;
+    font-size: 14PX;
+    font-family: 'Poppins';
+    /* margin-top: 100px; */
+
+}
+.rdrsignup{
+    color:rgb(115, 113, 113);
+    text-align: center;
+    margin-top: 132px;
+    font-size: 12PX;
+    font-family: 'Poppins';
+}
+.forgrtPWD{
+    position: absolute;
+    display: flex;
+    margin-top: 25px;
+    margin-left: 144px;
+    font-size: 13px;
+    font-weight: 400;
+    /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+    font-family: 'Poppins';
+    font-size: 15px;
+}
+
+#superLoginBox{
+    
+    /* max-width: 500px;
+    margin: auto; */
+    display: flex;
+    justify-content: center;
+}
+
+.rights_footer{
+  margin-top: 20px;
+}
+/* @media (max-width:900px){
+    #superLoginBox{
+
+        margin: 0 auto;
+    }
+} */
+

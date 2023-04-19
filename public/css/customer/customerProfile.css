@@ -1,0 +1,352 @@
+#footer1{
+   height: 200px;
+   width: 100vw;
+   background-color: rgb(34, 14, 85);
+   margin-top: 800px;
+   margin-left: -10px;
+}
+.rights_footer{
+   height: 50px;
+   width: 100vw;
+   margin-top: 20px;
+   position: absolute;
+   background-color: black;
+}
+.rights_footer p{
+   color: white;
+   text-align: center;
+}
+#logo2{
+   width: 190px;
+   height: auto;
+   position: absolute;
+}
+.slogan{
+   color: white;
+   position: absolute;
+   margin-left: 150px;
+   margin-top: 73px;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.contactus{
+   color: white;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+   font-weight: 510;
+   margin-left: 780px;
+   margin-top: 20px;
+}
+#footerPhone{
+   width: 20px;
+   height: auto;
+   margin-left: 750px;
+   position: absolute;
+}
+#footerPhone+p{
+   color:white;
+   margin-left: 780px;
+}
+#mail{
+   width: 20px;
+   height: auto;
+   margin-left: 750px;
+   position: absolute;
+}
+#mail+p{
+   color: white;
+   margin-left: 782px;
+}
+#location{
+   width: 20px;
+   height: auto;
+   margin-left: 750px;
+   position: absolute;
+}
+#location+p{
+   color: white;
+   margin-left: 780px;
+}
+.socialMedia{
+    position: absolute;
+    margin-top: -145px;
+    margin-left: 1200px;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+   font-weight: 510;
+}
+.socialMediaIcon{
+   position: absolute;
+   margin-top: -120px;
+   margin-left: 1235px;
+}
+
+.socialMediaIcon img{
+   width: 22px;
+   height: auto;
+   padding: 10px;
+}
+
+
+
+
+
+
+.wrapper{
+   width: 520px;
+   height: 590px;
+   background-color: white;
+   box-shadow: 0px 10px 20px 6px rgba(3, 3, 3, 0.2);
+   border-radius: 10px;
+   position: absolute;
+   margin-left: 510px;
+   margin-top: -680px;
+}
+.profilePic{
+   position: absolute;
+   width: 90px;
+   height: auto;
+   margin-top: -60px;
+   margin-left: 210px;
+   box-shadow: 1px 2px 2px 3px rgba(3, 3, 3, 0.2);
+   border-radius: 40px;
+   z-index: 0;
+}
+#name{
+   position: absolute;
+   margin-left: 25px;
+   margin-top: 70px;
+   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+   color: rgb(120, 119, 119);
+}
+#FnameLbl{
+   position: absolute;
+   margin-top: 72px;
+   margin-left: 217px;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+   border: hidden;
+   transition: 1s, linear;
+   outline: none;
+}
+#SnameLbl{
+   position: absolute;
+   margin-top: 72px;
+   margin-left: 294px;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+   border: hidden;
+   transition: 1s, linear;
+   outline: none;
+}
+.bar{
+   width: 199px;
+   height: 2px;
+   border-radius: 1px;
+   margin-top: 90px;
+   margin-left: 201px;
+   background-color: rgb(91, 91, 149);
+   position: absolute;
+   visibility: hidden;  
+}  
+#FnameLbl:hover ~#SnameLbl ~.bar{
+    visibility: visible;
+
+}
+#SnameLbl:hover ~.bar{
+    visibility: visible;
+}
+#email{
+   position: absolute;
+   margin-left: 25px;
+   margin-top: 110px;
+   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+   color: rgb(120, 119, 119);
+}
+#emailLbl{
+   position: absolute;
+   margin-top: 112px;
+   margin-left: 145px;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+   border: hidden;
+   width: 300px;
+   transition: 1s, linear;
+   outline: none;
+   text-align: center;
+   outline: none;
+   width: 300px;
+}
+#emailLbl:hover{
+   cursor: pointer;
+   border-top: hidden;
+   border-left: hidden;
+   border-right: hidden;
+   border-bottom: 2px solid rgb(91, 91, 149);
+   transition: 1s, linear;
+}
+#mobileNumber{
+   position: absolute;
+   margin-left: 25px;
+   margin-top: 150px;
+   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+   color: rgb(120, 119, 119);
+}
+#mobileNumberLbl{
+   /* position: absolute; */
+   margin-top: 152px;
+   margin-left: 146px;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+   border: hidden;
+   width: 300px;
+   transition: 1s, linear;
+   outline: none;
+   text-align: center;
+   outline: none;
+   width: 300px;
+}
+#mobileNumberLbl:hover{
+   cursor: pointer;
+   border-top: hidden;
+   border-left: hidden;
+   border-right: hidden;
+   border-bottom: 2px solid rgb(91, 91, 149);
+   transition: 1s, linear;
+}
+#streetAddress{
+   position: absolute;
+   margin-left: 25px;
+   margin-top: 22px;
+   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+   color: rgb(120, 119, 119);
+}
+
+.underline{
+   width: 312px;
+   height: 26px;
+   margin-top: 22px;
+   margin-left: 164px;
+}
+
+
+#streetAddressLbl{
+   margin-left: 17px;
+   width: 290px;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+   border: hidden;
+   transition: 1s, linear;
+   outline: none;
+   text-align: center;
+   outline: none;
+}
+#streetAddressLbl:hover{
+   cursor: pointer;
+   border-top: hidden;
+   border-left: hidden;
+   border-right: hidden;
+   border-bottom: 2px solid rgb(91, 91, 149);
+   transition: 1s, linear;
+}
+#streetAddressLbl1{
+   width: 62px;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+   border: hidden;
+   transition: 1s, linear;
+   outline: none;
+   text-align: center;
+   outline: none;
+}
+#streetAddressLbl1:hover{
+   cursor: pointer;
+   border-top: hidden;
+   border-left: hidden;
+   border-right: hidden;
+   border-bottom: 2px solid rgb(91, 91, 149);
+   transition: 1s, linear;
+}
+#streetAddressLbl2{
+   width: 80px;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+   border: hidden;
+   transition: 1s, linear;
+   outline: none;
+   text-align: center;
+   outline: none;
+}
+#streetAddressLbl2:hover{
+   cursor: pointer;
+   border-top: hidden;
+   border-left: hidden;
+   border-right: hidden;
+   border-bottom: 2px solid rgb(91, 91, 149);
+   transition: 1s, linear;
+}
+
+
+
+
+.line{
+   position: absolute;
+   width: 450px;
+   margin-left: 20px;
+   margin-top: 38px;
+}
+#profileData{
+   position: absolute;
+   margin-top: 276px;
+   margin-left: 376px;
+   width: 90px;
+   height: 30px;
+   border-radius: 20px;
+   border: none;
+   background-color: blue;
+   color: white;
+   font-family: Georgia, 'Times New Roman', Times, serif;
+   transition: 1s;
+}
+#profileData:hover{
+   cursor: pointer;
+   width: 100px;
+   margin-left: 366;
+}
+#imageData{
+   visibility: hidden;
+}
+#aboutme{
+   resize: none;
+   position: absolute;
+   margin-left: 60px;
+   margin-top: 80px; 
+}
+#aboutme::placeholder{
+   font-family: Georgia, 'Times New Roman', Times, serif;
+   text-indent: 10px;
+}
+#camera{
+   position: absolute;
+   width: 24px;
+   height: auto;
+   margin-left: 11px;
+   margin-top: 11px;
+   z-index: 2;
+}
+#camera:hover{
+   cursor: pointer;
+}
+.border{
+   background-color: rgb(61, 59, 59);
+   width: 45px;
+   height: 45px;
+   position: absolute;
+   margin-left: 233px;
+   margin-top: 15px;
+   z-index: 1;
+   border-radius: 40px;
+}
+#input{
+   display: none;
+}
+#dp1{
+   position: absolute;
+   width: 106px;
+   height: 98px;
+   border-radius: 100px;
+   margin-top: -58px;
+   margin-left: 202px;
+   z-index: 0;
+}
