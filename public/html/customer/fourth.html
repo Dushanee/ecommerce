@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LogIn</title>
+    
+    <script type="text/javascript" src="../FrontUi/Js/fourth.js" defer></script>
+    <link rel="stylesheet" href="front.css">
+    <link rel="stylesheet" href="../FrontUi/Css/fourth.css">
+</head>
+<body>
+   
+  <div class="navigator_background"></div>
+  <div class="wrapper">
+
+     <a class="aboutus p" id="a" href="../FrontUi/front.html" >About Us</a>
+     <a class="blog p" id="a" href="../FrontUi/second.html" >Blog</a>
+     <a class="customerSpt p" id="a" href="../FrontUi/third.html">Customer Support</a>
+     <a class="login p" id="a" href="../FrontUi/php/customerLogin.php">Log In</a>
+     <a class="signup p" id="a" href="../FrontUi/selectUserType.html">Sign Up</a>
+  </div>
+    
+  <div>
+    <!-- <span class="events"><b>Events</b></span>
+    <span class="lab"><b>Lab</b></span> -->
+    <img class="eventslab" src="../FrontUi/images1/logo.png" >
+  </div>
+     
+    <div class="overlay"></div>
+    
+
+    <p>LOG IN</p>
+    <div class="loginForm">
+       <form action="" id="loginForm" method="POST">
+           <label class="userNamelbl" for="username">Username or Email address</label>
+           <input type="text" name="username" id="userName" placeholder="Your username or email address" spellcheck="false" required>
+           
+           <label class="passwordlbl" for="password">Password</label>
+           <input type="password" name="password" id="pwd" placeholder="Your password" spellcheck="false" required>  
+
+           <input type="submit" name="loginsubmit" id="submit" value="submit" onclick="sendData(event)">
+       </form>
+       <input onclick="showpwd()" type="button" id="eyebtn" class="Eye_btn">
+       <hr class="line1">
+       <p>&nbsp;&nbsp;&nbsp; or continue with &nbsp;&nbsp;&nbsp;</p>
+       <hr class="line2">
+       <img class="login_google" src="../FrontUi/images1/login/login_google_30px.png">
+       <img class="login_facebook" src="../FrontUi/images1/login/login_facebook_30px.png">
+       <p>Does not have an account?<a href="../FrontUi/fifth.html">signup</a></p>
+       <p>Want to become a seller?<a href="../FrontUi/fifth.html">Create a business account</a></p>
+    </div>
+
+
+    <div class="footer" id="footer1">
+     
+        <img id="logo2" src = "../FrontUi/images1/logo.png" >
+         <span class="slogan">Make your dream</span><br>
+         <span class="slogan">event come true</span> 
+         
+         <p class="contactus">Contact us</p>
+  
+         <img id="footerPhone" src="./images1/footer_ringer_volume_32px.png">
+         <p id="phone">+94 33 234 1249</p>
+         
+         <img id="mail" src="./images1/footer_secured_letter_32px.png">
+         <p id="email">eventslab@gmail.com</p>
+  
+         <img id="location" src="./images1/footer_location_32px.png">
+         <p id="address">UCSC complec, Reid avenue, Colombo 7</p>
+         
+         <p class="socialMedia">Follow us on social media</p>
+          
+         <div class="socialMediaIcon">
+           <img id="icon" src="./images1/social media/footer_facebook_32px.png">
+           <img id="icon" src="./images1/social media/footer_instagram_32px.png">
+           <img id="icon" src="./images1/social media/LinkedIn_Circled_32px.png">
+         </div>
+
+         <script type="text/javascript" src="front.js"></script>
+  
+        <div class="rights_footer">
+          <p>Copyrights reserved</p>
+        </div>
+      </div>
+  
+</body>
+</html>

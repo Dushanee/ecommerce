@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sign up</title>
+    <script type="text/javascript" src="front.js" defer></script>
+    <script type="text/javascript" src="../FrontUi/Js/fifth.js" defer></script>
+    <link rel="stylesheet" href="front.css">
+    <link rel="stylesheet" href="Css/fifth.css">
+</head>
+<body>
+   
+    <div class="navigator_background"></div>
+    <div class="wrapper">
+
+       <a class="aboutus p" id="a" href="../FrontUi/front.html" >About Us</a>
+       <a class="blog p" id="a" href="../FrontUi/second.html" >Blog</a>
+       <a class="customerSpt p" id="a" href="../FrontUi/third.html">Customer Support</a>
+       <a class="login p" id="a" href="../FrontUi/php/customerLogin.php">Log In</a>
+       <a class="signup p" id="a" href="../FrontUi/fifth.html">Sign Up</a>
+    </div>
+    
+    <div>
+      <!-- <span class="events"><b>Events</b></span>
+      <span class="lab"><b>Lab</b></span> -->
+      <img class="eventslab" src="../FrontUi/images1/logo.png" >
+  </div>
+     
+    <div class="form_signup1">
+     <!-- <form action="./php/SignupForm1.php" method="POST" id="signup1"> -->
+      <form action="" method="POST" id="signup1">
+       <div class="form">
+        <p class="signup1_topic">Create an Account</p>
+
+        <label for="email" class="emailAddress1">Email address</label>
+        <input type="text" id="email" class="emailAddress2" name="emailAdd" placeholder="test@gmail.com" spellcheck="false"  
+         required oninvalid="this.setCustomValidity('Enter valid Email')" oninput="this.setCustomValidity('')">
+
+        <label for="name" class="name1">Name</label>
+        <input type="text" id="Fname" class="name2F" name="Fnm" placeholder="First Name" required spellcheck="false">&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="text" id="Sname" class="name2S" name="Snm" placeholder="Second Name" required spellcheck="false">
+        
+        <label for="pwd" class="lblpwd">password</label>
+        <input type="password" id="pwd1" class="pwd1" name="password1" placeholder="Password" required spellcheck="false"
+        oninvalid="this.setCustomValidity('Enter Password')" oninput="this.setCustomValidity('')">
+        <input onclick="showpwd()" type="button" id="eyebtn" class="Eye_btn">
+         
+        <label for="pwd2" class="lblReEnterpwd">Re-Enter password</label>
+        <input type="password" id="pwd2" class="pwd3" name="password2" placeholder="Re-Enter Password" required spellcheck="false">
+        <input onclick="showRePwd()" type="button" id="ReEnter_eyebtn" class="ReEnter_Eye_btn">
+         
+        <input type="checkbox" id="agreementChkbox" name="agrementchk" value="agreed">
+        <label class="agreement" for="agrementchk"> By clicking I agree to <a href="#">Term and Condition</a></label>
+        
+        <input type="submit" name="submit1" id="form1Submit" value="Submit" onclick="sendData(event)">
+        <!-- <input type="submit" name="submit1" id="form1Submit" value="Submit"> -->
+      </div>   
+     </form>   
+    </div>
+
+    <div class="footer" id="footer1">
+     
+        <img id="logo2" src = "../FrontUi/images1/logo.png" >
+         <span class="slogan">Make your dream</span><br>
+         <span class="slogan">event come true</span> 
+         
+         <p class="contactus">Contact us</p>
+  
+         <img id="footerPhone" src="./images1/footer_ringer_volume_32px.png">
+         <p id="phone">+94 33 234 1249</p>
+         
+         <img id="mail" src="./images1/footer_secured_letter_32px.png">
+         <p id="email">eventslab@gmail.com</p>
+  
+         <img id="location" src="./images1/footer_location_32px.png">
+         <p id="address">UCSC complec, Reid avenue, Colombo 7</p>
+         
+         <p class="socialMedia">Follow us on social media</p>
+          
+         <div class="socialMediaIcon">
+           <img id="icon" src="./images1/social media/footer_facebook_32px.png">
+           <img id="icon" src="./images1/social media/footer_instagram_32px.png">
+           <img id="icon" src="./images1/social media/LinkedIn_Circled_32px.png">
+         </div>
+
+         <script type="text/javascript" src="front.js"></script>
+  
+        <div class="rights_footer">
+          <p>Copyrights reserved</p>
+        </div>
+      </div>
+</body>
+</html>
