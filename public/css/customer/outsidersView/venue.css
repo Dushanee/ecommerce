@@ -1,0 +1,494 @@
+#navBar{
+    position: fixed;
+    z-index: 1;
+}
+body{
+    overflow-x: hidden;
+}
+
+
+
+.navigator_background{
+    /* background-color: hsl(0, 1%, 19%); */
+    background-color: #4c4b84;
+    width: 100vw;
+    height: 80px;
+    margin-left: -8px;
+    margin-top: -8px;   
+}
+.wrapper{
+    margin-top: -50px;
+    margin-left: 900px;
+    position: absolute;
+    width: 900px;
+}
+.wrapper a{
+    text-decoration: none;
+    /* color: rgb(9, 9, 9);   */
+    color: rgb(250, 249, 248);
+    padding: 0px 1px 10px 1px;
+    margin-top: 0px;
+    margin-left: 45px;
+    transition: 0.25s;
+    text-shadow: 5px 8px 15px rgb(15, 15, 17);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+}
+
+a:is(:link,:active,:visited).active{
+    border-bottom: 4px solid rgb(255, 254, 254);
+    width:1px;
+}
+.wrapper a:hover{
+    background-color: rgb(76, 73, 73);
+    border-radius: 20px;
+    margin-left: 30px;
+    /* padding: 13px 8px 10px 10px;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     */
+    transition: 0.25s;
+    padding: 10px 10px 10px 10px;
+    cursor: pointer;
+}
+.eventslab{
+    position: absolute;
+    width: 200px;
+    height: auto;
+    margin-top: -140px;
+    margin-left: -10px;
+}
+
+
+
+
+
+
+
+#content{
+    position: absolute;
+    margin-top: 10%;
+    margin-left: -3%;
+}
+#userbar{
+    width: 105%;
+    height: 50px;
+    background-color: rgb(250, 247, 247);
+    margin-left: -10px;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 22%);
+    display: inline-block;
+}
+#userName{
+    margin-left: 31px;
+    margin-top: -6px;
+    font-size: 18px;
+    font-family: 'Poppins';
+    position: absolute;
+    font-weight: 600;
+    width: 150px;
+}
+#userMenu{
+    width: 25px;
+    height: auto;
+    position: absolute;
+    margin-top: 12px;
+    margin-left: 173px;
+    transform: rotate(90deg);
+}
+#userMenu:hover{
+   cursor: pointer;
+}
+#sideMenuBar{
+    position: absolute;
+    width: 200px;
+    height: 0vh;
+    margin-top: 62px;
+    margin-left: -11px;
+    background-color: rgb(190, 180, 180);
+    border-radius: 10px;
+    transition: 2s ease-in-out;
+    z-index: 1;
+}
+ /* #userMenu:hover ~#sideMenuBar{
+    visibility: visible;
+    height: 80vh;
+}
+#sideMenuBar:hover{
+    visibility: visible;
+
+    width: 250px;
+    height: 80vh;
+} */
+
+#sideMenuBarLinks{
+    position: absolute;
+    margin-top: 160px;
+    position: absolute;
+
+}
+#sideMenuBarLinks a{
+    display: flex;
+    margin-top: 50px;
+    margin-left: 63px;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    border-radius: 10px;
+    text-decoration: none;
+    color: white;
+    font-family: 'Poppins';
+    font-size: 16px;
+}
+
+#profilepic{
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    margin-left: 70px;
+    margin-top: -140px;
+    position: absolute;
+}
+#profilepic:hover{
+    cursor: pointer;
+}
+
+#border:hover{
+    cursor: pointer;
+}
+#camera{
+    width: 28px;
+    height: auto;
+    position: absolute;
+    margin-left: 9px;
+    margin-top: 7px;
+}
+#search{
+    position: absolute;
+    width: 323px;
+    height: 30px;
+    background-color: rgb(240 235 235);
+    box-shadow: 0 2px 4px 0 rgb(0 0 0 / 23%);
+    margin-top: -45px;
+    margin-left: 58%;
+    border-radius: 49px;
+}
+#search p{
+    color: rgb(139 132 132 / 90%);
+    margin-top: 8px;
+    margin-left: 52px;
+}
+#searchGlass{
+    position: absolute;
+    margin-top: -38px;
+    margin-left: 6px;
+    width: 23px;
+    height: auto;
+}
+#icons{
+    display: inline-flex;
+    flex-direction: row;
+    margin-left: 84%;
+    margin-top: -52px;
+    flex-wrap: nowrap;
+    position: absolute;
+}
+#icons img{
+    width: 30px;
+    height: auto;
+    margin-top: 10px;
+    margin-left: 29px;
+}
+#h2{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 48px;
+    color: #210E54;
+    position: absolute;
+    margin-left: 67px;
+    margin-top: -2%;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+}
+#venueFilter{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 48px;
+    color: #4c4b84;
+    position: absolute;
+    margin-left: 138px;
+    margin-top: 2px;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+}
+
+#filterWrapper{
+    position: absolute;
+    width: 950px;
+    height: 122px;
+    margin-top: 100px;
+    margin-left: 350px;
+    background: #7F6E86;
+    border-radius: 20px;
+}
+#venueFilter p{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    position: absolute;
+    margin-top: 47px;
+    margin-left: -152px;  
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    align-content: space-around;
+    flex-direction: row;
+}
+#lblLocation{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    color: #DCD7CE;
+    margin-top: 40px;
+    margin-left: -147px;
+    position: absolute;
+}
+#location{
+    background: #DCD7CE;
+    border-radius: 15px;
+    width: 240px;
+    height: 30px;
+    position: absolute;
+    margin-left: 20px;
+    margin-top: 50px;
+    text-align: center;
+    border: none;
+}
+#location::placeholder{
+    text-align: center;
+    font-family: 'Poppins';
+}
+#lblDate{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    color: #DCD7CE;
+    margin-top: 10px;
+    margin-left: 400px;
+    position: absolute;
+}
+#date{
+    background: #DCD7CE;
+    border-radius: 15px;
+    width: 240px;
+    height: 30px;
+    position: absolute;
+    margin-left: 300px;
+    margin-top: 50px;
+    text-align: center;
+    border: none;
+}
+#date::placeholder{
+    text-align: center;
+    font-family: 'Poppins';
+}
+#lblCount{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    color: #DCD7CE;
+    margin-top: 10px;
+    margin-left: 600px;
+    position: absolute;
+}
+#count{
+    background: #DCD7CE;
+    border-radius: 15px;
+    width: 240px;
+    height: 30px;
+    position: absolute;
+    margin-left: 580px;
+    margin-top: 50px;
+    text-align: center;
+    border: none;
+}
+#count::placeholder{
+    text-align: center;
+    font-family: 'Poppins';
+}
+input::-webkit-outer-spin-button, input::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+}
+#sendFilter{
+    width: 80px;
+    height: 40px;
+    border-radius: 20px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    background: #370075;
+    color: white;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    margin-left: 800px;
+    margin-top: 130px;
+    transition: 1s;
+}
+#sendFilter:hover{
+    cursor: pointer;
+    box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.5);
+}
+
+
+/* show service provider */
+
+.wrapper1{
+    /* position: absolute;
+    width: 1400px;
+    height: 53vw;
+    display: flex;
+    flex-direction: row;
+    margin-top: 100px;
+    margin-left: 90px;
+    flex-wrap: wrap; */
+    position: absolute;
+    width: 1600px;
+    height: 53vw;
+    display: flex;
+    flex-direction: row;
+    margin-top: 100px;
+    margin-left: 74px;
+    /* left: 30%; */
+    flex-wrap: wrap;
+}
+.box{
+    width: 300px;
+    height: 400px;
+    margin: 10px;
+}
+
+.card {
+    /* box-shadow: 0 4px 8px 2px rgb(0 0 0 / 20%);
+    transition: 0.5s;
+    width: 368px;
+    height: 360px;
+    border-radius: 5px;
+    margin-left: 55px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Poppins'; */
+
+    box-shadow: 0 4px 8px 2px rgb(0 0 0 / 20%);
+    transition: 0.5s;
+    width: 312px;
+    height: 360px;
+    border-radius: 5px;
+    margin-left: 35px;
+    margin-top: 20px;
+    display: flex;
+    padding: 1px;
+    flex-direction: column;
+    font-family: 'Poppins';
+
+
+}
+#accountImg{
+    /* width: 350px;
+    height: 200px;
+    box-shadow: 0 4px 8px 2px rgba(0,0,0,0.2);
+    border-radius: 7px;
+    margin-left: 10px;
+    margin-top: 5px;
+    object-fit: contain; */
+
+    width: 279px;
+    height: 200px;
+    box-shadow: 0 4px 8px 2px rgb(0 0 0 / 20%);
+    border-radius: 7px;
+    display: flex;
+    margin-left: 17px;
+    margin-top: 5px;
+    object-fit: cover;
+    flex-wrap: wrap;
+}
+.card:hover{
+    box-shadow: 0 8px 16px 4px rgba(0,0,0,0.2);
+}
+.container1 {
+    padding-left: 34px;
+    padding-top: 8px;
+    margin-top: -248px;
+}
+.container1 h4 b{
+    margin-left: 35px;
+    margin-top: 191px;
+    position: absolute;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+}
+.businessName{
+    text-align: center;
+    font-size: 20px;
+    margin-top: -16px;
+}
+.container1 p{
+    position: absolute;
+    margin-left: 8px;
+    margin-top: 296px;
+}
+#ratingImg{
+    width: 168px;
+    height: auto;
+    margin-left: 45px;
+    margin-top: 220px;
+    position: absolute;
+}
+#ratingCount{
+    position: absolute;
+}
+#locationImg{
+    position: absolute;
+    margin-top: 285px;
+    margin-left: -22px;
+    object-fit: contain;
+}
+#viewshop{
+    position: absolute;
+    margin-left: 185px;
+    margin-top: 283px;
+    width: 78px;
+    height: 30px;
+    background-color: transparent;
+    color: rgb(10, 10, 10);
+    border-radius: 14px;
+    transition: 1s;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#viewshop:hover{
+    cursor: pointer;
+    box-shadow: 0 8px 16px 4px rgba(0,0,0,0.2);
+}
+#backgroundSubmit{
+    background-color: aqua;
+    height: 30px;
+    width: 0px;
+    position: absolute;
+    margin-left: 167px;
+    margin-top: 282px;
+    border-radius: 13px;
+    z-index: -1;
+    transition: 0.4s;
+    
+}
+#viewshop:hover + #backgroundSubmit{
+    width: 46px;
+}

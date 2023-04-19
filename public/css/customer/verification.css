@@ -1,0 +1,51 @@
+.verification_lbl{
+    position: absolute;
+    color: rgb(105, 108, 108);
+    margin-top: 50px;
+    margin-left: 550px;
+    font-size: 25px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 700;
+}
+#verification_box{
+    width: 200px;
+    height: 24px;
+    border-radius: 20px;
+    background-color: rgb(223, 223, 223);
+    border: none;
+    text-align: center;
+    color: rgb(131, 131, 133);
+    font-weight: 700;
+    position: absolute;
+    margin-top: 110px;
+    margin-left: 630px;
+    letter-spacing: 5px;
+}
+input::-webkit-outer-spin-button, input::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+}
+#verify{
+     width: 80px;
+     height: 30px;
+     border: 3px solid;
+     border-radius: 20px;
+     border-color: rgb(142, 139, 139);
+     margin-top: 150px;
+     margin-left: 690px;
+     transition: 1s;
+     background-color: rgb(205, 205, 205);
+     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+     font-weight: 600;
+}
+#verify:hover{
+    cursor: pointer;
+    border: 3px solid rgb(39, 39, 39) ;
+}
+.verifyForm{
+    margin-top: 200px;
+}
+#expired_statment{
+    color :red;
+    margin-left: 620px;
+    display: none;
+}

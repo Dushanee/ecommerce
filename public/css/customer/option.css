@@ -1,0 +1,125 @@
+
+.wrapper2{
+    margin-left: 364px; 
+    margin-top: 83px;
+    width: 875px;
+    height: 400px;
+    position: relative;
+    display: flex;
+
+}
+.wrapper2 div{
+    margin-top: 50px;
+    position: relative;
+}
+.box1{
+    /* background-color: rgb(110, 107, 107); */
+    height: 300px;
+    width: 200px;
+    /* margin-left: 290px;  */
+    background-image: url('images/img/img1.jpg');
+    border-radius: 5px;
+    transition: 2s;
+} 
+.box2{
+    /* background-color: rgb(110, 107, 107); */
+    height: 300px;
+    width: 200px;
+    background-image: url('images/img/img2.jpg');
+    border-radius: 5px;
+    transition: 2s;
+}
+
+.box3{
+    /* background-color: rgb(110, 107, 107); */
+    height: 300px;
+    width: 200px;
+    background-image: url('images/img/img3.jpg'); 
+    border-radius: 5px;
+    transition: 2s;
+}
+
+.ball1{
+    background-color: rgb(75, 68, 68);
+    width: 80px;
+    height: 80px;
+    border-radius: 38px;
+    margin-top: -390px;
+    margin-left: 513px;
+    background-image: url('images1/location_30px.png');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 32px;
+    transition: 1.2s;
+    position: absolute;
+}
+.ball2{
+    background-color: rgb(75, 68, 68);
+    width: 80px;
+    height: 80px;
+    border-radius: 38px;
+    margin-top: -390px;
+    margin-left: 744px;
+    background-image: url('images1/food_30px.png');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 25px;
+    transition: 1.2s;
+    position: absolute;
+}
+.ball3{
+    background-color: rgb(75, 68, 68);
+    width: 80px;
+    height: 80px;
+    border-radius: 38px;
+    margin-top: -390px;
+    margin-left: 968px;
+    background-image: url('images1/festival_30px.png'),url('images1/balloons_25px.png');
+    background-repeat: no-repeat;
+    background-position: 50% 2%,50% 60%;
+    background-size: 33px;
+    transition: 1.2s;
+    position: absolute;
+}
+.space{
+     width: 30px;
+}
+.space1{
+    margin-left: 88px;
+} 
+.button{
+    position: absolute;
+    margin-left: 377px;
+    margin-top: -268px;
+}
+ 
+.btn_left{
+    margin-left: 20px;
+    margin-top: 52px;
+    position: absolute;
+    padding: 36px 14px 20px 20px;
+    background-image: url('../images1/Left_30px.png');
+    background-repeat: no-repeat;
+    border: none;
+    background-color: white;
+
+}
+
+.btn_right{
+    margin-left: 750px;
+    margin-top: 52px;
+    position: absolute;
+    padding: 36px 20px 20px 20px;
+    background-image: url('../images1/Right_30px.png');
+    background-repeat: no-repeat;
+    border: none;
+    background-color: white;
+}
+
+.button .btn_left:hover{
+    cursor: pointer;
+
+}
+.button .btn_right:hover{
+    cursor: pointer;
+}

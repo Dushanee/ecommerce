@@ -1,0 +1,269 @@
+body{
+  overflow-x: hidden;
+}
+.form_signup1{
+    background-color: rgb(249, 246, 246);
+    width: 600px;
+    height: 630px;
+    margin-left: 450px;
+    margin-top: 10px;
+}
+.signup1_topic{
+    margin-top: 40px;
+    margin-left: 120px;
+    font-size: 40px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(125, 125, 127);
+}
+.form{
+    position: absolute;
+    box-shadow: 2px 15px 20px 2px rgba(3, 3, 3, 0.2);
+    width: 601px;
+    height: 630px;
+}
+.emailAddress1{
+    position: absolute;
+    margin-top: 19px;
+    margin-left: 34px;
+    font-size: 17px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: lightslategray;
+}
+.emailAddress2{
+    position: absolute;
+    margin-top: 49px;
+    margin-left: 32px;
+    width: 400px;
+    height: 25px;
+    border: none;
+    background-color: rgb(209 207 207 / 34%);
+    border-radius: 10px;
+    text-align: center;
+    color: rgb(50, 48, 48);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    transition: 1s;
+}
+.emailAddress2{
+    cursor: pointer;
+}
+#email:focus{
+    outline: none;
+    border-color: rgb(48, 47, 47);
+    box-shadow: 1px 2px 2px 3px rgba(3, 3, 3, 0.2);
+}
+.emailAddress2::placeholder{
+     text-align: center;
+     color: rgb(101, 93, 93);
+     font-family: 'Times New Roman', Times, serif;
+     font-size: 14px;
+}
+#errorMessage{
+    color: red;
+    position: absolute;
+    margin-left: 160px;
+    margin-top: 20px;
+}
+.name1{
+    position: absolute;
+    margin-top: 109px;
+    margin-left: 32px;
+    height: 25px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: lightslategray;
+}
+.name2F{
+    position: absolute;
+    margin-top: 141px;
+    margin-left: 32px;
+    border: none;
+    width: 200px;
+    height: 25px;
+    background-color: rgb(209 207 207 / 34%);
+    border-radius: 10px;
+    text-align: center;
+    color: rgb(50, 48, 48);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    transition: 1s;
+}
+.name2F:hover{
+    cursor: pointer;
+}
+#Fname:focus{
+    outline: none;
+    border-color: rgb(48, 47, 47);
+    box-shadow: 1px 2px 2px 3px rgba(3, 3, 3, 0.2);
+}
+.name2F::placeholder{
+    color: rgb(101, 93, 93);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 14px;
+    text-align: center;
+}
+.name2S{
+    position: absolute;
+    margin-top: 140px;
+    margin-left: 226px;
+    border: none;
+    width: 200px;
+    height: 25px;
+    background-color: rgb(209 207 207 / 34%);
+    border-radius: 10px;
+    text-align: center;
+    color: rgb(50, 48, 48);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    transition: 1s;
+}
+.name2S:hover{
+    cursor: pointer;
+}
+#Sname:focus{
+    outline: none;
+    border-color: rgb(48, 47, 47);
+    box-shadow: 1px 2px 2px 3px rgba(3, 3, 3, 0.2);
+}
+.name2S::placeholder{
+    text-align: center;
+    color: rgb(101, 93, 93);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 14px;
+}
+.lblpwd{
+    position: absolute;
+    margin-top: 193px;
+    margin-left: 16px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: lightslategray;
+    height: 25px;
+}
+.pwd1{
+    position: absolute;
+    margin-top: 220px;
+    margin-left: 15px;
+    border: none;
+    width: 200px;
+    height: 25px;
+    background-color: rgb(209 207 207 / 34%);
+    border-radius: 10px;
+    text-indent: 10px;
+    color: rgb(50, 48, 48);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    transition: 1s;
+}
+.pwd1:hover{
+    cursor: pointer;
+}
+.pwd1::placeholder{
+    text-align: left;
+    color: rgb(101, 93, 93);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 14px;
+}
+#pwd1:focus{
+    outline: none;
+    border-color: rgb(48, 47, 47);
+    box-shadow: 1px 2px 2px 3px rgba(3, 3, 3, 0.2);
+}
+.Eye_btn{
+    position: absolute;
+    width: 28px;
+    height: 26px;
+    background-image: url("../images1/eye_32px.png");
+    background-repeat: no-repeat;
+    background-size:25px;
+    background-position: 50% 50%;
+    margin-top: 221px;
+    margin-left: 179px;
+    border: none;
+    border-radius: 20px;
+    background-color: transparent;
+}
+.Eye_btn:hover{
+    cursor: pointer;
+    background-color: rgba(132, 128, 128, 0.344);
+}    
+.lblReEnterpwd{
+    position: absolute;
+    margin-top: 271px;
+    margin-left: 15px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: lightslategray;
+    height: 25px;
+}
+.pwd3{
+    position: absolute;
+    margin-top: -200px;
+    margin-left: 420px;
+    transition: 1s;
+}
+.pwd3{
+    position: absolute;
+    margin-top: 297px;
+    margin-left: 15px;
+    border: none;
+    width: 200px;
+    height: 25px;
+    background-color: rgb(209 207 207 / 34%);
+    border-radius: 10px;
+    text-indent: 10px;
+    color: rgb(50, 48, 48);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    transition: 1s;
+}
+.pwd3::placeholder{
+    text-align: left;
+    color: rgb(101, 93, 93);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 14px;
+}
+#pwd2:focus{
+    outline: none;
+    border-color: rgb(48, 47, 47);
+    box-shadow: 1px 2px 2px 3px rgba(3, 3, 3, 0.2);
+}
+.pwd3:hover{
+  cursor: pointer;
+}
+.ReEnter_Eye_btn{
+    position: absolute;
+    width: 28px;
+    height: 26px;
+    background-image: url("../images1/eye_32px.png");
+    background-repeat: no-repeat;
+    background-size:25px;
+    background-position: 50% 50%;
+    margin-top: 298px;
+    margin-left: 179px;
+    border: none;
+    border-radius: 20px;
+    background-color: transparent;
+}
+.ReEnter_Eye_btn:hover{
+    cursor: pointer;
+    background-color: rgb(209 207 207 / 34%);
+}
+
+.agreement{
+  position: absolute;
+  margin-top: 350px;
+  margin-left: 170px;
+  font-size: 11px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#agreementChkbox{
+    position: absolute;
+    margin-top: 350px;
+    margin-left: 150px;
+}
+#form1Submit{
+    margin-top: 400px;
+    margin-left: 200px;
+    width: 150px;
+    height: 40px;
+    background-color: rgb(55, 55, 227);
+    color: wheat;
+    font-family: Verdana, Geneva, Tahoma, sans-serif; 
+    border-radius: 20px;
+}
+#form1Submit:hover{
+    cursor: pointer;
+}

@@ -1,0 +1,201 @@
+.signup{
+    border-bottom: 4px solid rgb(252, 250, 250);
+    width: 1px;
+}
+.form_signup2{
+    position: absolute;
+    background-color: rgb(219, 216, 216);
+    width: 600px;
+    height: 540px;
+    margin-top: 30px;
+    margin-left: 450px;
+    border-radius: 20px;
+}
+.signup2_topic{
+   
+    margin-top: 10px;
+    margin-left: 120px;
+    font-size: 40px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(125, 125, 127);
+}
+.phn_num{
+    position: absolute;
+    margin-top: 19px;
+    margin-left: 34px;
+    font-size: 17px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: lightslategray;
+}
+#phone_number{
+    position: absolute;
+    margin-top: 49px;
+    margin-left: 32px;
+    width: 400px;
+    height: 25px;
+    border: none;
+    background-color: rgba(132, 128, 128, 0.344);
+    border-radius: 10px;
+    text-align: center;
+    color: rgb(50, 48, 48);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#phone_number::placeholder{
+    color: rgb(101, 93, 93);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 14px;
+    text-align: center;
+}
+input::-webkit-outer-spin-button, input::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+}
+
+#phone_number:hover{
+    cursor: pointer;
+}
+.address{
+    position: absolute;
+    margin-top:100px;
+    margin-left: 34px;
+    font-size: 19px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: lightslategray;
+}
+.Streetaddress{
+    position: absolute;
+    margin-top: 170px;
+    margin-left: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: lightslategray;
+}
+#StreetAddress{
+    margin-top: 205px;
+    margin-left: 30px;
+    width: 300px;
+    height: 25px;
+    border: none;
+    background-color: rgba(132, 128, 128, 0.344);
+    border-radius: 10px;
+    text-align: center;
+    color: rgb(50, 48, 48);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#StreetAddress::placeholder{
+    text-align: center;
+    color: rgb(101, 93, 93);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 14px;
+}
+#StreetAddress:hover{
+    cursor: pointer;
+}
+#StreetAddress1{
+    margin-top: 10px;
+    margin-left: 30px;
+    width: 300px;
+    height: 25px;
+    border: none;
+    background-color: rgba(132, 128, 128, 0.344);
+    border-radius: 10px;
+    text-align: center;
+    color: rgb(50, 48, 48);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#StreetAddress1::placeholder{
+    text-align: center;
+    color: rgb(101, 93, 93);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 14px;
+}
+#StreetAddress1:hover{
+    cursor: pointer;
+}
+#StreetAddress2{
+    margin-top: 12px;
+    margin-left: 30px;
+    width: 300px;
+    height: 25px;
+    border: none;
+    background-color: rgba(132, 128, 128, 0.344);
+    border-radius: 10px;
+    text-align: center;
+    color: rgb(50, 48, 48);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#StreetAddress2::placeholder{
+    text-align: center;
+    color: rgb(101, 93, 93);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 14px;
+}
+#StreetAddress2:hover{
+    cursor: pointer;
+}
+.city{
+    position: absolute;
+    margin-top:91px;
+    margin-left: -300px;
+    font-size: 19px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: lightslategray;
+}
+#city{
+    position: absolute;
+    margin-top: 120px;
+    margin-left: -305px;
+    width: 300px;
+    height: 25px;
+    border: none;
+    background-color: rgba(132, 128, 128, 0.344);
+    border-radius: 10px;
+    text-align: center;
+    color: rgb(50, 48, 48);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#city::placeholder{
+    text-align: center;
+    color: rgb(101, 93, 93);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 14px;
+}
+.birthday{
+    position: absolute;
+    margin-top:258px;
+    margin-left: -300px;
+    font-size: 19px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: lightslategray;
+}
+#birthday{
+    position: absolute;
+    margin-top: 301px;
+    margin-left: -305px;
+    width: 300px;
+    height: 25px;
+    border: none;
+    background-color: rgba(132, 128, 128, 0.344);
+    border-radius: 10px;
+    text-align: center;
+
+}
+#birthday::placeholder{
+    text-align: center;
+    color: rgb(101, 93, 93);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 14px;
+}
+#form2Submit{
+    position: absolute;
+    margin-top: 384px;
+    margin-left: -110px;
+    background-color: rgb(55, 55, 227);
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif; 
+    border-radius: 20px;
+    width: 150px;
+    height: 40px;
+    border: none;
+}
+#form2Submit:hover{
+    cursor: pointer;
+}
