@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../../public/css/common.css">
+    <link rel="stylesheet" href="../../../public/css/my_packages.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>My Packages</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="topbar">
+
+            <div class="logo">
+                <img src="../../../public/image/logo.png">
+            </div>
+
+
+            <div class="search">
+                <input type="text" id="search" placeholder="search here">
+                <label for="search"><i class="fa fa-search"></i></label>
+            </div>
+            <i class="fa fa-bell"></i>
+
+            <div class="user">
+                <a href="new_profile.php"><img src="../../../public/image/propic.jpg" alt="propic"> </a>
+
+            </div>
+
+            <h6>
+                <?php echo $row['sp_name']; ?>
+            </h6>
+        </div>
+
+        <div class="sidebar">
+
+            <ul>
+
+                <li>
+                    <a  href="dashboard.php">
+                        <i class="fa fa-th-large"></i>
+                        <div>Dashboard</div>
+                    </a>
+                </li>
+
+                <li>
+                    <a class="active" href="my_packages.php">
+                        <i class="fa fa-list-alt"></i>
+                        <div>My Packages</div>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="my_order.php">
+                        <i class="fa fa-shopping-cart"></i>
+                        <div>My Orders</div>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="calender.php">
+                        <i class="fa fa-calendar"></i>
+                        <div>Calendar</div>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="notification.php">
+                        <i class="fa fa-envelope"></i>
+                        <div>Notifications</div>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="help.php">
+                        <i class="fa fa-volume-control-phone"></i>
+                        <div>Help</div>
+                    </a>
+                </li>
+                <br><br><br>
+                <li>
+                    <a href="logout.php">
+                        <i class="fa fa-sign-out"></i>
+                        <div>Log out</div>
+                    </a>
+                </li>
+
+
+            </ul>
+        </div>
+    </div>
+    <div class="main">
+
+        <h2>My packages</h2>
+        <div class="gigcontainer">
+            <div class="box">
+                
+                <div class="easy">
+                    <div class="name_package">Araliya Beach Resort</div>
+                    <p><b>Dehiwala</b></p>
+
+
+                    <p>
+                        Situated in Colombo, 600 metres from Mount Lavinia Beach, Viveka Hotel Colombo features
+                        accommodation with a garden, free private parking, a shared lounge and a restaurant.
+                        This 3-star hotel offers room service and a concierge service.
+                        The accommodation offers a 24-hour front desk, airport transfers, a shared kitchen and free WiFi
+                        throughout the property.
+                    </p>
+                    <br>
+                    <hr>
+                    <div class="options">
+                    <h4>Options</h4>
+                    <table>
+                        <tr>
+                            <td>
+                                Option name 
+                            </td>
+                            <td>
+                                hall1
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                               Option type 
+                            </td>
+                            <td>
+                                hall1
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Description 
+                            </td>
+                            <td>
+                                hall1
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Price 
+                            </td>
+                            <td>
+                                hall1
+                            </td>
+                        </tr>
+                    </table>
+                    <table>
+                        <tr>
+                            <th>
+                                <div class="image">
+                                    <img src="../../public/image/propic.jpg">    
+                                </div> 
+                            </th>
+                            <th>
+                                <div class="image">
+                                    <img src="../../public/image/hall1.jpg">    
+                                </div> 
+                            </th>
+                        </tr>
+                    </table>
+                    
+                    
+                
+                    
+                </div>
+                    <div class="btns">
+                        
+                        <button>Edit</button>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+
+</body>
+
+</html>
