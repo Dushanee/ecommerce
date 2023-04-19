@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../FrontUi/Css/verification.css">
+    <script type="text/javascript" src="../FrontUi/Js/verification.js" defer></script>
+    <title>Verification page</title>
+</head>
+<body>
+
+  <!-- <form action="../FrontUi/php/verification.php" method="POST" id="verification"> -->
+  <div class="verifyForm">
+    <form action="" method="POST" id="verification">
+    <label for="verification_box" class="verification_lbl">Verify your one time password</label>
+    <input type="number" name="verification_box" id="verification_box" spellcheck="false">
+    <input type="submit" name="verify" id="verify" value="verify" onclick="sendData()">
+  </div>
+   
+  <p id="expired_statment">Your verification code has expired</p>
+
+  </form>
+
+</body>
+</html>
