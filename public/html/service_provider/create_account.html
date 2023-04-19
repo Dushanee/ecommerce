@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>register</title>
+       <link rel="stylesheet" href="../css/signup_process.css">
+       
+    </head>
+    <body>  
+        
+        <div class="topnav">
+            <img src="../img/logo.png" alt="logo" style="width:100px;height:45px;margin-top: 5px; margin-left: 5px;" >
+          <div class="topnav-right">
+          <p>1. Registration</p>
+          <p><h4><b>2. Business Details</h4></b></p>
+          <p>3. Bank Account Details</p>
+          <P>4.Finish</P>
+        </div>
+        </div>
+
+        <div class="container">
+            <div class="description">
+               <h2> Tell us about you and your business <br>
+                so we can verify it.Please provide information<br>
+                per your official documents to get verified <br>
+                quicker</h2>
+        </div>
+
+        <div class="regform">
+            <center><img src="../img/logo.png" style="height: 60px;
+                width: 100px;"></center>
+            <div class="title">
+                Enter Your Business DetailS </div>
+            
+            <div class="form">
+               <div class="inputfield">
+                  <label>Your Business Name</label>
+                  <input type="text" class="input">
+               </div> 
+               
+               <div class="inputfield">
+                <label>Business Type</label>
+                <div class="custom_select">
+                  <select name="type">
+                    <option value="service_type" style="color:#777698;">Select a service type</option>
+                    <option value="venue_provider">venue provider</option>
+                    <option value="catering_service">catering service</option>
+                    <option value="deco_provicer">decoration provider</option>
+                    <option value="sounds_and_lights">sounds and light</option>
+                    <option value="photogrphy">photographer</option>
+                    <option value="entertainment">entertainment</option>
+                    
+
+                  </select>
+                </div>
+             </div> 
+                <div class="inputfield">
+                  <label>Telephone Number</label>
+                  <input type="int" class="input">
+               </div> 
+
+               <div class="inputfield">
+                  <label>Additional Telephone Number (optional)</label>
+                  <input type="int" class="input">
+               </div> 
+               <div class="inputfield">
+                <label>city</label>
+                <input type="text" class="input">
+             </div> 
+              <div class="inputfield">
+                  <label>Business Address</label>
+                  <input type="text" class="input">
+               </div>
+
+               <div class="inputfield">
+                <label>Business Description</label>
+                <textarea class="textarea" class="input"></textarea>
+             </div>
+               <br>  
+              <div class="inputfield">
+                
+                <input type="button" onclick="window.location.href='bank_account.html';" value="Next" class="btn"></div>
+              </div>
+            </div>
+        </div>
+    
+        <footer>
+            <center>copyrights reserved</center>
+        </footer>
+         
+    </body>
+</html>
