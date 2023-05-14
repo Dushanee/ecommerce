@@ -1,16 +1,8 @@
 <?php
+    include '../config/connection.php';
 
-require_once('connection.php');
-session_start();
-if (isset($_SESSION['sp_email']) && isset($_SESSION['sp_id'])) {
-    //header("Location:splogin.php");
-    $sp_id=$_SESSION['sp_id'];
-
-    $sql="SELECT * FROM `service_providers` WHERE sp_id = '$sp_id';";
-    $result=mysqli_query($connection, $sql);
-    $row = mysqli_fetch_assoc($result);
-
-}
+    $query_1="SELECT * FROM 'sp_faq'";
+    $result_1=mysqli_query($conn, $query_1);
 ?>
 
 <!DOCTYPE html>
@@ -23,100 +15,15 @@ if (isset($_SESSION['sp_email']) && isset($_SESSION['sp_id'])) {
     <link rel="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="../../../public/Service provider/css/help.css">
-    <link rel="stylesheet" type="text/css" href="../../../public/service provider/css/common.css">
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+    <!-- <link rel="stylesheet" type="text/css" href="../css/help_center.css"> -->
+    <title>Document</title>
 </head>
 <body>
-<div class="container" id="container">
-  <div class="topbar">
-
-    <div class="logo">
-      <img src="../../../public/service provider/image/logo.png">
+    <div class="top">
+        Navbar
     </div>
-
-
-    <div class="search">
-      <input type="text" id="search" placeholder="search here">
-      <label for="search"><i class="fa fa-search"></i></label>
-    </div>
-    <i class="fa fa-bell"></i>
-
-    <div class="user">
-      <a href="new_profile.php"><img src="../../../public/image/propic.jpg" alt="propic"> </a>
-
-    </div>
-
-    <h6>
-      <?php //echo $row['sp_name']; 
-      ?>
-    </h6>
-  </div>
-
-  <div class="sidebar">
-
-    <ul>
-
-      <li>
-        <a href="dashboard.php">
-          <i class="fa fa-th-large"></i>
-          <div>Dashboard</div>
-        </a>
-      </li>
-
-      <li>
-        <a class="active" href="my_packages.php">
-          <i class="fa fa-list-alt"></i>
-          <div>My Packages</div>
-        </a>
-      </li>
-
-      <li>
-        <a href="my_order.php">
-          <i class="fa fa-shopping-cart"></i>
-          <div>My Orders</div>
-        </a>
-      </li>
-
-      <li>
-        <a href="calender.php">
-          <i class="fa fa-calendar"></i>
-          <div>Calendar</div>
-        </a>
-      </li>
-
-      <li>
-        <a href="notification.php">
-          <i class="fa fa-envelope"></i>
-          <div>Notifications</div>
-        </a>
-      </li>
-
-      <li>
-        <a href="help.php">
-          <i class="fa fa-volume-control-phone"></i>
-          <div>Help</div>
-        </a>
-      </li>
-      <br><br><br>
-      <li>
-        <a href="logout.php">
-          <i class="fa fa-sign-out"></i>
-          <div>Log out</div>
-        </a>
-      </li>
-
-
-    </ul>
-  </div>
-
-
-
-  </div>
-
-<div class="main">
-<div class="help_picture">
+	
+	<div class="help_picture">
         <img src="./images/party.svg" alt="cover">
     </div>
 	
@@ -349,8 +256,114 @@ if (isset($_SESSION['sp_email']) && isset($_SESSION['sp_id'])) {
                 </form>
     </div>
 
-</div> 
-  
+    <div class="footer">
+        put footer seperately.
+    </div>
+
+
+
+
+
 </body>
 </html>
 
+<script>
+    //1
+        var start_popupContent = document.getElementById('start_popup');
+        var span = document.getElementsByClassName("close")[0];
+
+        span.onclick = function() {
+            start_popupContent.style.display = "none";
+        }
+
+        window.onclick = function(event) {
+            if (event.target == start_popupContent) {
+                start_popupContent.style.display = "none";
+            }
+        }
+
+        //2
+        var sf_popupContent = document.getElementById('sf_popup');
+        var span = document.getElementsByClassName("close")[0];
+
+        span.onclick = function() {
+            sf_popupContent.style.display = "none";
+        }
+
+        window.onclick = function(event) {
+            if (event.target == sf_popupContent) {
+                sf_popupContent.style.display = "none";
+            }
+        }
+
+        //3
+        var uaMgt_popupContent = document.getElementById('uaMgt_popup');
+        var span = document.getElementsByClassName("close")[0];
+
+        span.onclick = function() {
+            uaMgt_popupContent.style.display = "none";
+        }
+
+        window.onclick = function(event) {
+            if (event.target == uaMgt_popupContent) {
+                uaMgt_popupContent.style.display = "none";
+            }
+        }
+
+        //4
+        var custom_popupContent = document.getElementById('custom_popup');
+        var span = document.getElementsByClassName("close")[0];
+
+        span.onclick = function() {
+            custom_popupContent.style.display = "none";
+        }
+
+        window.onclick = function(event) {
+            if (event.target == custom_popupContent) {
+                custom_popupContent.style.display = "none";
+            }
+        }
+
+        //5
+        var pg_popupContent = document.getElementById('pg_popup');
+        var span = document.getElementsByClassName("close")[0];
+
+        span.onclick = function() {
+            pg_popupContent.style.display = "none";
+        }
+
+        window.onclick = function(event) {
+            if (event.target == pg_popupContent) {
+                pg_popupContent.style.display = "none";
+            }
+        }
+
+        //6
+        var so_popupContent = document.getElementById('so_popup');
+        var span = document.getElementsByClassName("close")[0];
+
+        span.onclick = function() {
+            so_popupContent.style.display = "none";
+        }
+
+        window.onclick = function(event) {
+            if (event.target == so_popupContent) {
+                so_popupContent.style.display = "none";
+            }
+        }
+
+        //7
+        var sf_popupContent = document.getElementById('sf_popup');
+        var span = document.getElementsByClassName("close")[0];
+
+        span.onclick = function() {
+            sf_popupContent.style.display = "none";
+        }
+
+        window.onclick = function(event) {
+            if (event.target == sf_popupContent) {
+               sf_popupContent.style.display = "none";
+            }
+        }
+
+</script>

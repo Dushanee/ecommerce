@@ -19,8 +19,8 @@ $row = mysqli_fetch_assoc($result);
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="../../../public/css/common.css">
-    <link rel="stylesheet" href="../../../public/css/new_dashboard.css">
+    <link rel="stylesheet" href="../../../public/service provider/css/common.css">
+    <link rel="stylesheet" href="../../../public/service provider/css/new_dashboard.css">
 
 </head>
 
@@ -31,7 +31,7 @@ $row = mysqli_fetch_assoc($result);
         <div class="topbar">
 
             <div class="logo">
-                <img src="../../../public/image/logo.png">
+                <img src="../../../public/service provider/image/logo.png">
             </div>
 
 
@@ -42,7 +42,7 @@ $row = mysqli_fetch_assoc($result);
             <i class="fa fa-bell"></i>
 
             <div class="user">
-                <a href="new_profile.php"><img src="../../../public/image/propic.jpg" alt="propic"> </a>
+                <a href="new_profile.php"><img src="../../../public/service provider/image/propic.jpg" alt="propic"> </a>
 
             </div>
 
@@ -84,7 +84,7 @@ $row = mysqli_fetch_assoc($result);
                 <li>
                     <a href="notification.php">
                         <i class="fa fa-envelope"></i>
-                        <div>Notifications</div>
+                        <div>Messages</div>
                     </a>
                 </li>
 
@@ -113,22 +113,22 @@ $row = mysqli_fetch_assoc($result);
 
             <?php
             if (($row['sp_type']) == 'venue') {
-                echo "<a href='../../../public/html/venue_package.html'> <button>Add Your Package</button> </a>";
+                echo "<a href='../../../public/service provider/html/venue_package.html'> <button>Add Your Package</button> </a>";
             }
             if (($row['sp_type']) == 'photo') {
-                echo "<a href='../../../public/html/photo_package.html'> <button>Add Your Package</button> </a>";
+                echo "<a href='../../../public/service provider/html/photo_package.html'> <button>Add Your Package</button> </a>";
             }
             if (($row['sp_type']) == 'sounds') {
-                echo "<a href='../../../public/html/sound_and_light_package.html'> <button>Add Your Package</button> </a>";
+                echo "<a href='../../../public/html/service provider/sound_and_light_package.html'> <button>Add Your Package</button> </a>";
             }
             if (($row['sp_type']) == 'cater') {
-                echo "<a href='../../../public/html/catering_package.html'> <button>Add Your Package</button> </a>";
+                echo "<a href='../../../public/html/service provider/catering_package.html'> <button>Add Your Package</button> </a>";
             }
             if (($row['sp_type']) == 'entertainment') {
-                echo "<a href='../../../public/html/ent_package.html'> <button>Add Your Package</button> </a>";
+                echo "<a href='../../../public/html/service provider/ent_package.html'> <button>Add Your Package</button> </a>";
             }
             if (($row['sp_type']) == 'deco') {
-                echo "<a href='../../../public/html/deco_package.html'> <button>Add Your Package</button> </a>";
+                echo "<a href='../../../public/html/service provider/deco_package.html'> <button>Add Your Package</button> </a>";
             }
             ?>
             <!-- <a href="../../../public/html/photo_package.html"> <button>Add Your Package</button> </a> -->

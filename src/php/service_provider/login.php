@@ -5,14 +5,14 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Login page</title>
-       <link rel="stylesheet" href="../../../public/css/login.css">
+       <link rel="stylesheet" href="../../../public/service provider/css/login.css">
        
     </head>
 
 <body>
 
 <div class="topnav">
-  <img src="../../../public/image/logo.png" alt="logo" style="width:100px;height:45px;" >
+  <img src="../../../public/service provider/image/logo.png" alt="logo" style="width:100px;height:45px;" >
   <div class="topnav-right">
   <a  href="#home">Home</a>
   <a href="#">Our services</a>
