@@ -4,12 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="../../../public/css/my_orders.css">
-    <link rel="stylesheet" type="text/css" href="../../../public/css/common.css">
-
+    <link rel="stylesheet" type="text/css" href="../css/common.css">
+    <link rel="stylesheet" type="text/css" href="../css/notification.css">
+    <link rel="stylesheet" type="text/css" href="../public/js/notification">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>Dashboard</title>
+
 </head>
+<body>
+
 
 <body>
     <div class="container">
@@ -31,7 +33,9 @@
 
             </div>
 
-            <h6> <?php echo $row['sp_name']; ?> </h6>
+            <h6>
+                <?php //echo $row['sp_name']; ?>
+            </h6>
         </div>
 
         <div class="sidebar">
@@ -39,21 +43,21 @@
             <ul>
 
                 <li>
-                    <a href="dashboard.php">
+                    <a  href="dashboard.php">
                         <i class="fa fa-th-large"></i>
                         <div>Dashboard</div>
                     </a>
                 </li>
 
                 <li>
-                    <a href="my_packages.php">
+                    <a class="active" href="my_packages.php">
                         <i class="fa fa-list-alt"></i>
                         <div>My Packages</div>
                     </a>
                 </li>
 
                 <li>
-                    <a class="active" href="my_order.php">
+                    <a href="my_order.php">
                         <i class="fa fa-shopping-cart"></i>
                         <div>My Orders</div>
                     </a>
@@ -91,47 +95,61 @@
             </ul>
         </div>
     </div>
-    <div class="main">
-        <div class="select-menu">
-            
-            
-                <div class="title">
-                    <h3>My Orders</h3>
-                </div>
-                <table>
-                    <tr>
-                        <th>Order ID</th>
-                        <th>Customer name</th>
-                        <th>Customer contact</th>
-                        <th>Event type</th>
-                        <th>Event Date and time</th>
-                        <th>Event location</th>
-                        <th>Package name </th>
-                        <th>option name</th>
-                        <th>option type </th>
-                        <th>Quantity</th>
-                        <th>Price</th>
-                        <th>Order Status </th>
-                    </tr>
-                    <tr>
-                       
-                        <td>011</td>
-                        <td>Amila Nadishani</td>
-                        <td>12/19</td>
-                        <td>rs.25000/=</td>
-                        <td>Ongoing</td>
-                    </tr>
-                   
-                </table>
 
-            </ul>
-        </div>
-        
-       
-         
-         
-    </div>
 
+
+
+<div class="main">
+
+    <div class=" box">     
+    <section class="msger">
+        <header class="msger-header">
+            <div class="msg-img"
+             style="background-image: url(https://image.flaticon.com/icons/svg/327/327779.svg)"></div>
+
+          <div class="msger-header-title">
+            <b>Customer</b> 
+          </div>
+          
+        </header>
+      
+        <main class="msger-chat">
+          <div class="msg left-msg">
+            
+      
+            <div class="msg-bubble">
+              <div class="msg-info">
+                <div class="msg-info-name">Customer</div>
+                <div class="msg-info-time">12:45</div>
+              </div>
+      
+              <div class="msg-text">
+                Hi, can know if i can customize menu? 😄
+              </div>
+            </div>
+          </div>
+      
+          <div class="msg right-msg">
+      
+            <div class="msg-bubble">
+              <div class="msg-info">
+                <div class="msg-info-name">chandula</div>
+                <div class="msg-info-time">12:46</div>
+              </div>
+      
+              <div class="msg-text">
+                You can change under some conditions!
+              </div>
+            </div>
+          </div>
+        </main>
+      
+        <form class="msger-inputarea">
+          <input type="text" class="msger-input" placeholder="Enter your message...">
+          <button type="submit" class="msger-send-btn">Send</button>
+        </form>
+      </section>
+    </div> 
 
 </body>
 </html>

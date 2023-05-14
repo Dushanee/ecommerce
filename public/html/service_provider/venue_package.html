@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="../../public/css/add_packages.css">
-    <link rel="stylesheet" type="text/css" href="../public/css/common.css">
+    <link rel="stylesheet" type="text/css" href="../css/add_packages.css">
+    <link rel="stylesheet" type="text/css" href="../css/common.css">
     <script type="text/javascript" src="../js/add_venue_options.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Add Packages</title>
@@ -17,7 +17,7 @@
         <div class="topbar">
           
                 <div class="logo">
-                    <img src="../img/logo.png">
+                    <img src="../image/logo.png">
                 </div> 
            
             
@@ -28,7 +28,7 @@
             <i class="fa fa-bell"></i>
             
             <div class="user">
-                <a href="profile.php"><img src="../img/propic.jpg" alt="propic"> </a>
+                <a href="profile.php"><img src="../image/propic.jpg" alt="propic"> </a>
                 
             </div>
   
@@ -41,49 +41,49 @@
             <ul>
   
                 <li> 
-                    <a  href ="../../src/php/service_provider/dashboard.php">
-                        <i class="fa fa-shopping-cart"></i>
+                    <a  href ="../../../src/php/service_provider/dashboard.php">
+                        <i class="fa fa-th-large"></i>
                         <div>Dashboard</div>
                     </a>
                 </li>
 
                 <li> 
-                    <a  href ="../../src/php/service_provider/my_packages.php">
+                    <a  href ="../../../src/php/service_provider/my_packages.php">
                         <i class="fa fa-list-alt"></i>
                         <div>My Packages</div>
                     </a>
                 </li>
 
                 <li> 
-                    <a  href ="my_orders.php">
-                        <i class="fa fa-th-large"></i>
+                    <a  href ="../../../src/php/service_provider/my_orders.php">
+                        <i class="fa fa-shopping-cart"></i>
                         <div>My Orders</div>
                     </a>
                 </li>
   
                 <li> 
-                    <a href ="calender.php">
+                    <a href ="../../../src/php/service_provider/calender.php">
                         <i class="fa fa-calendar"></i>
                         <div>Calendar</div>
                     </a>
                 </li>
    
                 <li> 
-                    <a href ="notification.php">
+                    <a href ="../../../src/php/service_provider/notification.php">
                         <i class="fa fa-envelope"></i>
-                        <div>Notifications</div>
+                        <div>Messages</div>
                     </a>
                 </li>
   
                 <li> 
-                    <a href ="settings.php">
+                    <a href ="../../../src/php/service_provider/settings.php">
                         <i class="fa fa-cog"></i>
                         <div>Settings</div>
                     </a>
                 </li>
   
                 <li> 
-                    <a href ="help.php">
+                    <a href ="../../../src/php/service_provider/help.php">
                         <i class="fa fa-volume-control-phone"></i>
                         <div>Help</div>
                     </a>
@@ -106,14 +106,14 @@
     <div class="gigform">
         <h1>ADD YOUR PACKAGE!<span>Enter your bussiness details to add your package<br>Venue Provider</span></h1>
         <!-- <form action="../../src/php/service_provider/venue_package.php" method="post"> -->
-            <form action="../../src/php/service_provider/venue_package.php" method="post" enctype="multipart/form-data">
+            <form action="../../../src/php/service_provider/venue_package.php" method="post" enctype="multipart/form-data">
 
             <div class="section"><span>1</span>Package Info</div>
             <div class="inner-wrap">
                 <label>Package Name (Venue Name/Hotel Name)<input type="text" name="pack_name" required></label>
                 <label>City <input type="text" name="pack_location" required></label>
-                <label>Business Address <textarea name="pack_address"></textarea></label>
-                <label>Add Description About Your package<textarea name="pack_description"></textarea></label>
+                <label>Business Address <textarea name="pack_address" required></textarea></label>
+                <label>Add Description About Your package<textarea name="pack_description" required></textarea></label>
 
                 <label>Add Images</label>
                  <input type="file" id="myimage" name="packageImg" required><br>
@@ -123,21 +123,21 @@
             <div class="inner-wrap">
                 
                 <label>Venue Package-Option Name (Hall Name/Hall Number)<input type="text" name="option_name" required></label>
-                <label>Option Type (Indoor/ Outdoor)<input type="text" name="type"></label>
-                <label>Max. Guest Count <input type="text" name="capacity"></label>
-                <label>Description<textarea name="option_description"></textarea></label>
-                <label>Option Price <input type="text" name="option_rate"></label>
+                <label>Option Type (Indoor/ Outdoor)<input type="text" name="type" required></label>
+                <label>Max. Guest Count <input type="text" name="capacity" required></label>
+                <label>Description<textarea name="option_description" required></textarea></label>
+                <label>Option Price <input type="text" name="option_rate" required></label>
 
                 <!--add images-->
                 <label>Add Images</label>
                 <label>File 1</label>
-                    <input type="file" id="myimage" name="file1"><br>
+                    <input type="file" id="myimage" name="file1" required><br>
                 <label>File 2</label>
-                    <input type="file" id="myimage" name="file2">
+                    <input type="file" id="myimage" name="file2" required>
                 <label>File 3</label>
-                    <input type="file" id="myimage" name="file3"><br>
+                    <input type="file" id="myimage" name="file3" required><br>
                 <label>File 4</label>
-                    <input type="file" id="myimage" name="file4">    
+                    <input type="file" id="myimage" name="file4" required>    
             </div>
 
       
