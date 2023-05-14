@@ -19,9 +19,9 @@ if (isset($_SESSION['sp_email']) && isset($_SESSION['sp_id'])) {
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="../../../public/css/calender.css">
-    <link rel="stylesheet" type="text/css" href="../../../public/css/common.css">
-    <script src="../../../public/js/calender.js" defer></script>
+    <link rel="stylesheet" type="text/css" href="../../../public/service provider/css/calender.css">
+    <link rel="stylesheet" type="text/css" href="../../../public/service provider/css/common.css">
+    <script src="../../../public/service provider/js/calender.js" defer></script>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -31,7 +31,7 @@ if (isset($_SESSION['sp_email']) && isset($_SESSION['sp_id'])) {
         <div class="topbar">
 
             <div class="logo">
-                <img src="../../../public/image/logo.png">
+                <img src="../../../public/service provider/image/logo.png">
             </div>
 
 
@@ -54,42 +54,42 @@ if (isset($_SESSION['sp_email']) && isset($_SESSION['sp_id'])) {
             <ul>
 
                 <li>
-                    <a class="active" href="../../src/php/service_provider/dashboard.php">
+                    <a class="active" href="dashboard.php">
                         <i class="fa fa-th-large"></i>
                         <div>Dashboard</div>
                     </a>
                 </li>
 
                 <li>
-                    <a href="../../php/service_provider/my_packages.php">
+                    <a href="my_packages.php">
                         <i class="fa fa-list-alt"></i>
                         <div>My Packages</div>
                     </a>
                 </li>
 
                 <li>
-                    <a href="../../src/php/service_provider/my_order.php">
+                    <a href="my_order.php">
                         <i class="fa fa-shopping-cart"></i>
                         <div>My Orders</div>
                     </a>
                 </li>
 
                 <li>
-                    <a href="../../src/php/service_provider/calender.php">
+                    <a href="calender.php">
                         <i class="fa fa-calendar"></i>
                         <div>Calendar</div>
                     </a>
                 </li>
 
                 <li>
-                    <a href="../../src/php/service_provider/notification.php">
+                    <a href="notification.php">
                         <i class="fa fa-envelope"></i>
-                        <div>Notifications</div>
+                        <div>Messages</div>
                     </a>
                 </li>
 
                 <li>
-                    <a href="../../php/service_provider/help.php">
+                    <a href="help.php">
                         <i class="fa fa-volume-control-phone"></i>
                         <div>Help</div>
                     </a>
@@ -137,24 +137,25 @@ if (isset($_SESSION['sp_email']) && isset($_SESSION['sp_id'])) {
             <div class="calendar-days">
             </div>
         </div>
+
+        
         <div class="calendar-footer">
-        </div>
+
         <div class="date-time-formate">
+</hr>
             <div class="day-text-formate">TODAY</div>
             <div class="date-time-value">
                 <div class="time-formate">02:51:20</div>
                 <div class="date-formate">23 - july - 2022</div>
                 
             </div>
-            <hr>
-            <div class="note">
-                    <h5>
-                        Bookings on
-                    </h5>
-                </div>
+            
+            
             <div class="month-list"></div>
 
         </div>
+        </div>
+        
     </div>
 </div>
 

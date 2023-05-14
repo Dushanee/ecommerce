@@ -75,7 +75,7 @@
                 <li>
                     <a href="notification.php">
                         <i class="fa fa-envelope"></i>
-                        <div>Notifications</div>
+                        <div>Messages</div>
                     </a>
                 </li>
 
@@ -100,19 +100,22 @@
 
         <div class="gigform">
             <h1>ADD YOUR PACKAGE!<span>Enter your bussiness details to add your package</span></h1>
-            <form action="createGig.php" method="post">
+            <form action="../../src/php/service_provider/deco_package.php" method="post" enctype="multipart/form-data">
                 <div class="section"><span>1</span>Package Info</div>
                 <div class="inner-wrap">
-                    <label>Business Name <input type="text" name="name"></label>
-                    <label>Areas you cover <input type="text" name="city"></label>
-                    <label>Business Address <textarea name="adress"></textarea></label>
-                    <label>Add Description About Your Business<textarea name="description"></textarea></label>
+                    <label>Business Name <input type="text" name="pack_name" required></label>
+                    <label>Areas you cover <input type="text" name="pack_location" required></label>
+                    <label>Business Address <textarea name="pack_adress" required></textarea></label>
+                    <label>Add Description About Your Business<textarea name="pack_description" required></textarea></label>
+
+                    <label>Add Images</label>
+                 <input type="file" id="myimage" name="packageImg" required><br>
                 </div>
 
                 <div class="section"><span>2</span>Deco- option</div>
                 <div class="inner-wrap">
                     <label>Deco-Option Type
-                        <select name="type">
+                        <select name="type" required>
                             <option value="select">select type</option>
                             <option value="birthday">Birthday</option>
                             <option value="engagement">Engagement</option>
@@ -123,16 +126,20 @@
                             <option value="other">other</option>
 
                         </select></label>
-                    <label>Deco-Option Name<input type="text" name="deco_option_name"></label>
-                    <label>Deco-Option Description<textarea name="option_description"></textarea></label>
-                    <label>Deco-Option Price <input type="text" name="Deco_option_price"></label>
+                    <label>Deco-Option Name<input type="text" name="option_name" required></label>
+                    <label>Deco-Option Description<textarea name="option_description" required></textarea></label>
+                    <label>Deco-Option Price <input type="text" name="option_rate" required></label>
 
                     <!--add images-->
                     <label>Add Images</label>
                     <label>File 1</label>
-                    <input type="file" id="myimage" name="filename"><br>
-                    <label>File 2</label>
-                    <input type="file" id="myimage" name="filename">
+                    <input type="file" id="myimage" name="file1" required><br>
+                <label>File 2</label>
+                    <input type="file" id="myimage" name="file2" required>
+                <label>File 3</label>
+                    <input type="file" id="myimage" name="file3" required><br>
+                <label>File 4</label>
+                    <input type="file" id="myimage" name="file4" required> 
                 </div>
 
 

@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="../../../public/css/common.css">
-    <link rel="stylesheet" type="text/css" href="../../../public/css/my_packages.css">
+    <link rel="stylesheet" type="text/css" href="../../../public/service provider/css/common.css">
+    <link rel="stylesheet" type="text/css" href="../../../public/service provider/css/my_packages.css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -15,7 +15,7 @@
         <div class="topbar">
 
             <div class="logo">
-                <img src="../../../public/image/logo.png">
+                <img src="../../../public/service provider/image/logo.png">
             </div>
 
 
@@ -26,7 +26,7 @@
             <i class="fa fa-bell"></i>
 
             <div class="user">
-                <a href="new_profile.php"><img src="../../../public/image/propic.jpg" alt="propic"> </a>
+                <a href="new_profile.php"><img src="../../../public/service provider/image/propic.jpg" alt="propic"> </a>
 
             </div>
 
@@ -70,7 +70,7 @@
                 <li>
                     <a href="notification.php">
                         <i class="fa fa-envelope"></i>
-                        <div>Notifications</div>
+                        <div>Messages</div>
                     </a>
                 </li>
 
@@ -97,12 +97,13 @@
 
 <?php
 
-echo '<div class="wrapper1">';
+
+
+echo '<div class="main">';
 
 require_once('connection.php');
 session_start();
 if (isset($_SESSION['sp_email']) && isset($_SESSION['sp_id'])) {
-    //header("Location:splogin.php");
     $sp_id=$_SESSION['sp_id'];
 
     $sql="SELECT * FROM `service_providers` WHERE sp_id = '$sp_id'";
@@ -110,7 +111,10 @@ if (isset($_SESSION['sp_email']) && isset($_SESSION['sp_id'])) {
     $result=mysqli_query($connection, $sql);
     $row = mysqli_fetch_assoc($result);
 
-    $sql2="SELECT * FROM `packages` WHERE sp_id = '$sp_id'";
+    $sql2="SELECT * FROM packages 
+    INNER JOIN options ON options.pack_id = packages.pack_id
+    INNER JOIN option_type ON option_type.option_id = options.option_id
+    WHERE sp_id = '$sp_id'";
     $result2=mysqli_query($connection, $sql2);
     $row2 = mysqli_fetch_assoc($result2);
 
@@ -167,14 +171,14 @@ if (isset($_SESSION['sp_email']) && isset($_SESSION['sp_id'])) {
          
                        "<div class='card'>".
                        
-                         "<img id='accountImg'"."src='../../../public/image/packageImage/".$packImage."' alt='Avatar'>".
+                         "<img id='accountImg'"."src='../../../public/service provider/image/packageImage/".$packImage."' alt='Avatar'>".
                          "<div class='businessName'>".
                          "<h4><b>".$pack_name."</b></h4>".
                          "</div>".
                          "<div class='container1'>".
                           
                          "<p>".$pack_location."</p>".
-                         "<img id='ratingImg'"."src=../../../public/image/rating/".$packRatingImage.">".
+                         "<img id='ratingImg'"."src='../../../public/service provider/image/rating/".$packRatingImage."'>".
                
                          "<form action='view_package.php' method='POST'>".
                          "<input type='hidden' name='sp_id' value=".$sp_id." />".
@@ -193,189 +197,8 @@ if (isset($_SESSION['sp_email']) && isset($_SESSION['sp_id'])) {
 ?>
 
 
+
+
 </body>
 </html>
 
-<!-- <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="../../../public/css/common.css">
-    <link rel="stylesheet" type="text/css" href="../../../public/css/my_packages.css">
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-</head>
-<body>
-    <div class="container">
-        <div class="topbar">
-
-            <div class="logo">
-                <img src="../../../public/image/logo.png">
-            </div>
-
-
-            <div class="search">
-                <input type="text" id="search" placeholder="search here">
-                <label for="search"><i class="fa fa-search"></i></label>
-            </div>
-            <i class="fa fa-bell"></i>
-
-            <div class="user">
-                <a href="new_profile.php"><img src="../../../public/image/propic.jpg" alt="propic"> </a>
-
-            </div>
-
-            <h6>
-                <?php //echo $row['sp_name']; ?>
-            </h6>
-        </div>
-
-        <div class="sidebar">
-
-            <ul>
-
-                <li>
-                    <a  href="dashboard.php">
-                        <i class="fa fa-th-large"></i>
-                        <div>Dashboard</div>
-                    </a>
-                </li>
-
-                <li>
-                    <a class="active" href="my_packages.php">
-                        <i class="fa fa-list-alt"></i>
-                        <div>My Packages</div>
-                    </a>
-                </li>
-
-                <li>
-                    <a href="my_order.php">
-                        <i class="fa fa-shopping-cart"></i>
-                        <div>My Orders</div>
-                    </a>
-                </li>
-
-                <li>
-                    <a href="calender.php">
-                        <i class="fa fa-calendar"></i>
-                        <div>Calendar</div>
-                    </a>
-                </li>
-
-                <li>
-                    <a href="notification.php">
-                        <i class="fa fa-envelope"></i>
-                        <div>Notifications</div>
-                    </a>
-                </li>
-
-                <li>
-                    <a href="help.php">
-                        <i class="fa fa-volume-control-phone"></i>
-                        <div>Help</div>
-                    </a>
-                </li>
-                <br><br><br>
-                <li>
-                    <a href="logout.php">
-                        <i class="fa fa-sign-out"></i>
-                        <div>Log out</div>
-                    </a>
-                </li>
-
-
-            </ul>
-        </div>
-    </div>
-    <div class="main">
-
-        <h2>My packages</h2>
-        <div class="gigcontainer">
-            <div class="box">
-                
-                <div class="easy">
-                    <div class="name_package"><?php //echo $row2['pack_name'];?></div>
-                    <p><b><?php //echo $row2['pack_location'];?></b></p>
-
-
-                    <p>
-                    <?php //echo $row2['pack_description'];?>
-                   
-                    </p>
-                    <br>
-                    <hr>
-                    <div class="options">
-                    <h4>Options</h4>
-                    <table>
-                        <tr>
-                            <td>
-                                Option name 
-                            </td>
-                            <td>
-                                hall1
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                               Option type 
-                            </td>
-                            <td>
-                                hall1
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                Description 
-                            </td>
-                            <td>
-                                hall1
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                Price 
-                            </td>
-                            <td>
-                                hall1
-                            </td>
-                        </tr>
-                    </table>
-                    <table>
-                        <tr>
-                            <th>
-                                <div class="image">
-                                    <img src="../../public/image/propic.jpg">    
-                                </div> 
-                            </th>
-                            <th>
-                                <div class="image">
-                                    <img src="../../public/image/hall1.jpg">    
-                                </div> 
-                            </th>
-                        </tr>
-                    </table>
-                    
-                    
-                
-                    
-                </div>
-                    <div class="btns">
-                        
-                        <button>Edit</button>
-                    </div>
-                </div>
-            </div>
-
-
-        </div>
-
-
-
-    
-</body>
-</html> -->
-
-<?php //include('../../../public/html/my_package.html'); ?>

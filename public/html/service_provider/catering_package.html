@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="../../public/css/add_packages.css">
-    <link rel="stylesheet" type="text/css" href="../../public/css/common.css">
+    <link rel="stylesheet" type="text/css" href="../../public/service provider/css/add_packages.css">
+    <link rel="stylesheet" type="text/css" href="../../public/service provider/css/common.css">
 
     <script type="text/javascript" src="../js/add_catering_options.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -31,7 +31,7 @@
             <i class="fa fa-bell"></i>
 
             <div class="user">
-                <a href="new_profile.php"><img src="../../../public/image/propic.jpg" alt="propic"> </a>
+                <a href="new_profile.php"><img src="../../../public/service provider/image/propic.jpg" alt="propic"> </a>
 
             </div>
 
@@ -45,7 +45,7 @@
             <ul>
 
                 <li>
-                    <a class="active" href="dashboard.php">
+                    <a class="active" href="../../../dashboard.php">
                         <i class="fa fa-th-large"></i>
                         <div>Dashboard</div>
                     </a>
@@ -75,7 +75,7 @@
                 <li>
                     <a href="notification.php">
                         <i class="fa fa-envelope"></i>
-                        <div>Notifications</div>
+                        <div>Messages</div>
                     </a>
                 </li>
 
@@ -100,30 +100,38 @@
 
         <div class="gigform">
             <h1>ADD YOUR PACKAGE!<span>Enter your bussiness details to add your package<br>Catering Service</span></h1>
-            <form action="createGig.php" method="post">
+            <form action="../../src/php/service_provider/cater_package.php" method="post" enctype="multipart/form-data">
                 <div class="section"><span>1</span>Package Info</div>
                 <div class="inner-wrap">
-                    <label>Business Name<input type="text" name="package_name"></label>
-                    <label>City <input type="text" name="city"></label>
-                    <label>Business Address <textarea name="Adress"></textarea></label>
-                    <label>Add Description About Your package<textarea name="description"></textarea></label>
+                    <label>Business Name<input type="text" name="pack_name" required></label>
+                    <label>City <input type="text" name="pack_location" required></label>
+                    <label>Business Address <textarea name="pack_address" required></textarea></label>
+                    <label>Add Description About Your package<textarea name="pack_description"></textarea></label>
+
+                    <label>Add Images</label>
+                    <input type="file" id="myimage" name="packageImg" required><br>
                 </div>
 
                 <div class="section"><span>2</span>Options</div>
                 <div class="inner-wrap">
 
-                    <label>Meal Package-Option Name<input type="text" name="meal_option_name"></label>
+                    <label>Meal Package-Option Name<input type="text" name="option_name" required></label>
                     <label>Option Type (eg:Lunch,Dinner,Dessert,Indian etc)<input type="text"
-                            name="meal_option_name"></label>
-                    <label>Description<textarea name="option_description"></textarea></label>
-                    <label>Option Price <input type="text" name="meal_option_price"></label>
+                            name="type" required></label>
+                    <label>Description<textarea name="option_description" required></textarea></label>
+                    <label>Option Price (Enter the unit price)<input type="text" name="option_rate" required></label>
 
                     <!--add images-->
                     <label>Add Images</label>
                     <label>File 1</label>
-                    <input type="file" id="myimage" name="filename"><br>
-                    <label>File 2</label>
-                    <input type="file" id="myimage" name="filename">
+                    <input type="file" id="myimage" name="file1" required><br>
+                <label>File 2</label>
+                    <input type="file" id="myimage" name="file2" required>
+                <label>File 3</label>
+                    <input type="file" id="myimage" name="file3" required><br>
+                <label>File 4</label>
+                    <input type="file" id="myimage" name="file4" required>
+
 
                 </div>
 
@@ -135,6 +143,7 @@
                 <div class="inner-wrap">
                     <div id="container"></div>
                     <div class="moreopt">
+                        <input type="hidden" id="num_of_options" name="num_of_options">
                         <center><button type="button" onclick="addField()">Add Another Option</button></center>
                     </div>
                 </div>

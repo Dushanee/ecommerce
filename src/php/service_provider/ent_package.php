@@ -31,14 +31,13 @@
          $_SESSION['pack_description'] = $pack_description;
 
         $option_name        = $_POST['option_name'];//option
+        $type               = $_POST['type']; //option_type
         $option_description = $_POST['option_description'];//option
         $option_rate        = $_POST['option_rate'];//option
 
         $num_of_options  =  $_POST['num_of_options'];
         //echo $num_of_options;
         
-         $capacityArray[$capacity_pos] = $capacity;
-         $capacity_pos++;
 
          $optionTypearray[$opType_pos] = $type;
          $opType_pos++;
@@ -123,7 +122,7 @@
           $data[$data_pos] = $price;
           $data_pos++;
 
-          
+
           $data[$data_pos] = $_FILES["file".$var_pos."1"]["name"];
           $target_path = $target_dir.basename($_FILES["file".$var_pos."1"]["name"]);
           $result5 = move_uploaded_file($_FILES["file".$var_pos."1"]["tmp_name"],$target_path);
@@ -180,11 +179,10 @@
           $opType     = 1;
           $opDescrip  = 2;
           $opPrice    = 3;
-          $opcapacity = 4;
-          $optionPic1 = 5;
-          $optionPic2 = 6;
-          $optionPic3 = 7;
-          $optionPic4 = 8;
+          $optionPic1 = 4;
+          $optionPic2 = 5;
+          $optionPic3 = 6;
+          $optionPic4 = 7;
 
           $num_of_options = $_POST['num_of_options'];
         
@@ -209,7 +207,6 @@
                  $opType = $opType + 9;
                  $opDescrip = $opDescrip + 9;
                  $opPrice = $opPrice + 9;
-                 $opcapacity = $opcapacity + 9;
                  $optionPic1 = $optionPic1 + 9;
                  $optionPic2 = $optionPic2 + 9;
                  $optionPic3 = $optionPic3 + 9;
@@ -220,7 +217,27 @@
                
                foreach($data as $value){
                }
+            }
 
+
+            
+             $sql1 = "SELECT option_id FROM options WHERE pack_id = $pack_id";
+             $result1 = mysqli_query($connection, $sql1);
+    
+             if($result1 == true) {
+               if(mysqli_num_rows($result1)>0){
+                $opType_pos   = 0;
+    
+                while($row = mysqli_fetch_assoc($result1)){
+                
+    
+                    $sql3 = "INSERT INTO option_type(option_id,type) VALUES ('$row[option_id]', '$optionTypearray[$opType_pos]')";
+                    $result3 = mysqli_query($connection, $sql3);
+                    var_dump($result3);
+                    print_r($sql3);
+                    $opType_pos++;
+                }
+               }
  
     
           }

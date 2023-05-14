@@ -6,14 +6,14 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>register</title>
-    <link rel="stylesheet" href="../../../public/css/signup_process.css">
+    <link rel="stylesheet" href="../../../public/service provider/css/signup_process.css">
 
 </head>
 
 <body>
 
     <div class="topnav">
-        <img src="../img/logo.png" alt="logo" style="width:100px;height:45px;margin-top: 5px; margin-left: 5px;">
+        <img src="../../../public/Service provider/image/logo.png" alt="logo" style="width:100px;height:45px;margin-top: 5px; margin-left: 5px;">
         <div class="topnav-right">
             <p>1. Registration</p>
             <p>2. Business Details</p>
